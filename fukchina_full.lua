@@ -38,7 +38,7 @@ psettings = {
   unblock = true,
   ufps = 30
   }
-  
+
 changelog = '11.27 update\n\n-Fixed race runner\n-Added [Make hidden props] in magic menu'
 scriptv = {process ='com.tgc.sky.android',version=182597}
 teleparr = {spec = false,follow = false,collect = false,enable = false,hide = false,arr = 1}
@@ -247,7 +247,7 @@ mid = {
 {'👑️Small rabit',-848739711,0},
 {'🧸️Winter piano',-1202427550,0},
 {'🆕️Crab Troll',901504997,0},
-{'🆕️Anti Krill',3362316915,0}, 
+{'🆕️Anti Krill',3362316915,0},
 {'👗️Canada Cape',769892976,1},
 {'🆕️Halloween Pants',969946279,0},
 {'🆕️Halloween Hair 1',116679863,0},
@@ -257,7 +257,7 @@ mid = {
 {'🆕️Halloween Horn',1123843208,2},
 {'🆕️Witch Hat 2',4219181095,2},
 {'🆕Winter Feast Scarf',70832281,0},
-{'🆕Winter Feast Hat',2202141658,0}, 
+{'🆕Winter Feast Hat',2202141658,0},
 {'🆕Winter Feast Cape',1762827508,2},
 {'🆕Snow Globe',1440439821,0},
 {'❌none',0,0}
@@ -352,9 +352,9 @@ cworld = {
     {"⚠️Heaven⚠️", 'CandleSpaceEnd'},
     {"⚠️Credit⚠️", 'Credits'},
  }
- 
+
  doors = {
-   
+
  }
 
 mslot = {
@@ -465,7 +465,7 @@ pid = {
        {90660037, "Aviary Flag"},
        {3772092866, "Nightbook"},
        {3454884039, "Light Ball"},
-       {946432484, "Island Umbrella"}, 
+       {946432484, "Island Umbrella"},
        {660764419, "Brazier 3"},
        {2546683657, "Pumpkin"},
        {2657110838, "Kalimba"},
@@ -491,114 +491,114 @@ hpid = {
 
 cpoint = {
   pr1 = {
-    {96.95172882080078, 203.9423370361328, 272.4224853515625}, 
-    {66.72240447998047, 198.46482849121094, 362.03570556640625}, 
+    {96.95172882080078, 203.9423370361328, 272.4224853515625},
+    {66.72240447998047, 198.46482849121094, 362.03570556640625},
     {-19.729448318481445, 196.543701171875, 319.23468017578125}
-    
+
   },
   pr2 = {
     {245.62545776367188, 95.5485610961914, 221.84703063964844},
-    {51.063480377197266, 1.082053542137146, 331.52166748046875}, 
-    {101.43079376220703, 28.913820266723633, 333.3686218261719}, 
-    {130.28009033203125, 8.608041763305664, 284.0380859375}, 
-    {88.30374145507812, 22.063486099243164, 291.025634765625}, 
-    {128.39881896972656, 2.812415361404419, 407.2574157714844}, 
+    {51.063480377197266, 1.082053542137146, 331.52166748046875},
+    {101.43079376220703, 28.913820266723633, 333.3686218261719},
+    {130.28009033203125, 8.608041763305664, 284.0380859375},
+    {88.30374145507812, 22.063486099243164, 291.025634765625},
+    {128.39881896972656, 2.812415361404419, 407.2574157714844},
   },
   fr1 = {
-    {8.200207710266113, 95.40240478515625, -216.9573974609375}, 
-    {10.919458389282227, 97.72982025146484, -178.7023162841797}, 
+    {8.200207710266113, 95.40240478515625, -216.9573974609375},
+    {10.919458389282227, 97.72982025146484, -178.7023162841797},
     {22.434154510498047, 97.86457061767578, -142.3035888671875}
   },
   fr2 = {
-    {33.83924102783203, 108.33233642578125, -62.17718505859375}, 
-    {95.2885513305664, 112.5270004272461, -99.4018783569336}, 
-    {93.52252960205078, 110.70069122314453, -52.32523727416992}, 
-    {35.76015090942383, 109.07188415527344, -32.329010009765625}, 
-    {62.64570999145508, 96.57581329345703, 2.5483744144439697}, 
-    {84.50806427001953, 105.29931640625, 26.362586975097656}, 
+    {33.83924102783203, 108.33233642578125, -62.17718505859375},
+    {95.2885513305664, 112.5270004272461, -99.4018783569336},
+    {93.52252960205078, 110.70069122314453, -52.32523727416992},
+    {35.76015090942383, 109.07188415527344, -32.329010009765625},
+    {62.64570999145508, 96.57581329345703, 2.5483744144439697},
+    {84.50806427001953, 105.29931640625, 26.362586975097656},
     {48.2465934753418, 103.63257598876953, 12.391707420349121}
   },
   fr3 = {
-    {2.839021682739258, 86.61508178710938, -46.81080627441406}, 
-    {-9.491637229919434, 83.67889404296875, -13.139968872070312}, 
-    {-5.647504806518555, 87.60029602050781, 13.881937026977539}, 
+    {2.839021682739258, 86.61508178710938, -46.81080627441406},
+    {-9.491637229919434, 83.67889404296875, -13.139968872070312},
+    {-5.647504806518555, 87.60029602050781, 13.881937026977539},
     {7.8890228271484375, 88.57525634765625, 88.58280944824219}
   },
   fr4 = {
-    {63.966339111328125, 79.49282836914062, -284.2691955566406}, 
-    {0.7326644062995911, 121.19961547851562, -367.0590515136719}, 
+    {63.966339111328125, 79.49282836914062, -284.2691955566406},
+    {0.7326644062995911, 121.19961547851562, -367.0590515136719},
     {-45.982337951660156, 132.8380584716797, -198.25119018554688}
   },
   fr5 = {
-    {17.38182258605957, 146.5189971923828, 15.60563850402832}, 
-    {81.17194366455078, 141.08465576171875, 120.81361389160156}, 
-    {47.68941879272461, 144.47244262695312, 65.90519714355469}, 
-    {115.50276947021484, 164.77035522460938, 158.94093322753906}, 
-    {-6.182575702667236, 136.4398956298828, 200.41183471679688}, 
-    {26.954795837402344, 139.68226623535156, 224.25071716308594}, 
-    {-10.194414138793945, 134.5517120361328, 152.5101318359375}, 
-    {-81.54685974121094, 135.01173400878906, 223.6342315673828}, 
-    {-58.3707275390625, 136.15643310546875, 179.88563537597656}, 
-    {-56.886383056640625, 135.4618377685547, 218.7360382080078}, 
-    {-20.806842803955078, 134.6183624267578, 207.5647430419922}, 
-    {-21.810287475585938, 134.55897521972656, 261.7059020996094}, 
+    {17.38182258605957, 146.5189971923828, 15.60563850402832},
+    {81.17194366455078, 141.08465576171875, 120.81361389160156},
+    {47.68941879272461, 144.47244262695312, 65.90519714355469},
+    {115.50276947021484, 164.77035522460938, 158.94093322753906},
+    {-6.182575702667236, 136.4398956298828, 200.41183471679688},
+    {26.954795837402344, 139.68226623535156, 224.25071716308594},
+    {-10.194414138793945, 134.5517120361328, 152.5101318359375},
+    {-81.54685974121094, 135.01173400878906, 223.6342315673828},
+    {-58.3707275390625, 136.15643310546875, 179.88563537597656},
+    {-56.886383056640625, 135.4618377685547, 218.7360382080078},
+    {-20.806842803955078, 134.6183624267578, 207.5647430419922},
+    {-21.810287475585938, 134.55897521972656, 261.7059020996094},
     {-73.90713500976562, 147.9859619140625, 159.4910430908203}
   },
   fr6 = {
-    {11.568278312683105, 110.44747161865234, -11.819001197814941}, 
-    {-14.350753784179688, 104.80479431152344, 0.6991578936576843}, 
-    {-0.7532340884208679, 107.81478118896484, 68.78583526611328}, 
+    {11.568278312683105, 110.44747161865234, -11.819001197814941},
+    {-14.350753784179688, 104.80479431152344, 0.6991578936576843},
+    {-0.7532340884208679, 107.81478118896484, 68.78583526611328},
     {2.1829042434692383, 106.96797180175781, 90.21467590332031}
   },
   va1 = {
-    {-30.466176986694336, 147.114501953125, -151.39772033691406}, 
+    {-30.466176986694336, 147.114501953125, -151.39772033691406},
     {-17.43215560913086, 154.89381408691406, -126.94638061523438}
   },
   de1 = {
-    {83.19461822509766, 0.8931258916854858, 313.50323486328125}, 
-    {-29.68844985961914, 1.954253911972046, 238.90013122558594}, 
-    {-69.21147918701172, 8.101288795471191, 171.30227661132812}, 
-    {1.350915551185608, 1.1179736852645874, 299.5738830566406}, 
-    {-59.2152214050293, 4.482473850250244, 224.3214874267578}, 
-    {-90.4620132446289, 2.6760103702545166, 326.61895751953125}, 
+    {83.19461822509766, 0.8931258916854858, 313.50323486328125},
+    {-29.68844985961914, 1.954253911972046, 238.90013122558594},
+    {-69.21147918701172, 8.101288795471191, 171.30227661132812},
+    {1.350915551185608, 1.1179736852645874, 299.5738830566406},
+    {-59.2152214050293, 4.482473850250244, 224.3214874267578},
+    {-90.4620132446289, 2.6760103702545166, 326.61895751953125},
     {44.365570068359375, 0.6282044649124146, 228.56680297851562}
   },
   de2 = {
-    {77.69338989257812, 92.25956726074219, 260.7549133300781}, 
-    {43.791255950927734, 90.14799499511719, 229.9110870361328}, 
-    {53.92071533203125, 99.21656036376953, 152.45957946777344}, 
-    {63.40105438232422, 66.34053039550781, -13.661370277404785}, 
-    {44.300437927246094, 94.3846435546875, 130.56182861328125}, 
-    {10.916092872619629, 76.6250228881836, -133.59512329101562}, 
-    {-4.162625789642334, 89.4147720336914, -135.28839111328125}, 
-    {49.96483612060547, 69.7237777709961, -62.57978820800781}, 
-    {81.1445083618164, 64.3047866821289, -107.21367645263672}, 
-    {70.5404052734375, 69.17701721191406, -156.1171112060547}, 
+    {77.69338989257812, 92.25956726074219, 260.7549133300781},
+    {43.791255950927734, 90.14799499511719, 229.9110870361328},
+    {53.92071533203125, 99.21656036376953, 152.45957946777344},
+    {63.40105438232422, 66.34053039550781, -13.661370277404785},
+    {44.300437927246094, 94.3846435546875, 130.56182861328125},
+    {10.916092872619629, 76.6250228881836, -133.59512329101562},
+    {-4.162625789642334, 89.4147720336914, -135.28839111328125},
+    {49.96483612060547, 69.7237777709961, -62.57978820800781},
+    {81.1445083618164, 64.3047866821289, -107.21367645263672},
+    {70.5404052734375, 69.17701721191406, -156.1171112060547},
     {32.799076080322266, 69.72303009033203, -217.41574096679688}
   },
   de3 = {
-    {98.68771362304688, 115.79803466796875, 468.6960754394531}, 
-    {68.91381072998047, 109.1550521850586, 490.6760559082031}, 
-    {47.52444839477539, 108.5938720703125, 513.4615478515625}, 
-    {80.95787811279297, 108.51556396484375, 509.0512390136719}, 
-    {296.867431640625, 116.74671936035156, 526.1262817382812}, 
-    {310.94061279296875, 120.83760833740234, 556.564453125}, 
+    {98.68771362304688, 115.79803466796875, 468.6960754394531},
+    {68.91381072998047, 109.1550521850586, 490.6760559082031},
+    {47.52444839477539, 108.5938720703125, 513.4615478515625},
+    {80.95787811279297, 108.51556396484375, 509.0512390136719},
+    {296.867431640625, 116.74671936035156, 526.1262817382812},
+    {310.94061279296875, 120.83760833740234, 556.564453125},
     {297.31475830078125, 115.4719009399414, 348.1332702636719}
   },
   de4 = {
-    {-140.23443603515625, 1.2785651683807373, 421.68963623046875}, 
-    {-180.7798614501953, 3.973724365234375, 484.90673828125}, 
-    {-194.31446838378906, 0.8118993043899536, 400.9505920410156}, 
-    {-168.3665771484375, 2.0468192100524902, 371.8758239746094}, 
-    {-274.99176025390625, 12.156349182128906, 424.8158264160156}, 
+    {-140.23443603515625, 1.2785651683807373, 421.68963623046875},
+    {-180.7798614501953, 3.973724365234375, 484.90673828125},
+    {-194.31446838378906, 0.8118993043899536, 400.9505920410156},
+    {-168.3665771484375, 2.0468192100524902, 371.8758239746094},
+    {-274.99176025390625, 12.156349182128906, 424.8158264160156},
     {-292.43408203125, 31.235795974731445, 403.9704895019531}
   },
   de5 = {
-    {-48.612648010253906, 104.93779754638672, -77.65389251708984}, 
-    {-215.27764892578125, 136.3376922607422, -164.43309020996094}, 
-    {-249.95486450195312, 101.41854858398438, -190.11062622070312}, 
-    {-210.87734985351562, 90.00242614746094, -321.1565246582031}, 
-    {-247.11279296875, 84.56513214111328, -372.64276123046875}, 
+    {-48.612648010253906, 104.93779754638672, -77.65389251708984},
+    {-215.27764892578125, 136.3376922607422, -164.43309020996094},
+    {-249.95486450195312, 101.41854858398438, -190.11062622070312},
+    {-210.87734985351562, 90.00242614746094, -321.1565246582031},
+    {-247.11279296875, 84.56513214111328, -372.64276123046875},
     {-276.9136047363281, 85.47688293457031, -344.01361083984375}
   }
 }
@@ -1027,7 +1027,7 @@ crlist = {
 {map='Night',x=29.9371337890625,y=83.0035629272461,z=41.46938705444336},
 {map='Night',x=-15.767090797424316,y=149.57713317871094,z=-35.307350158691406},
 {map='Night',x=-3.488233804702759,y=147.29953002929688,z=-30.431438446044922},
-{map='Night',x=34.7994499206543,y=161.15341186523438,z=-41.43452835083008}, 
+{map='Night',x=34.7994499206543,y=161.15341186523438,z=-41.43452835083008},
 {map='Night',x=33.02892303466797,y=46.39405822753906,z=-151.37643432617188},
 {map='Night',x=31.032665252685547,y=47.245487213134766,z=-152.07701110839844},
 {map='Night',x=-21.581571578979492,y=39.024539947509766,z=-159.19284057617188},
@@ -1078,66 +1078,66 @@ crlist = {
 {map='Night2',x=-2.1454503536224365,y=304.5909423828125,z=59.38310241699219},
 {map='Night2',x=-10.953668594360352,y=307.59967041015625,z=59.396671295166016},
 {map='Night2',x=-0.34176620841026306,y=309.8086853027344,z=72.05538940429688},
-{map='StormEnd',x=17.45,y=84.61,z=53.20},  
-{map='StormEnd',x=11.84,y=84.61,z=50.19},  
-{map='StormEnd',x=14.93,y=84.63,z=44.41},  
-{map='StormEnd',x=9.66,y=84.61,z=39.77},  
-{map='StormEnd',x=10.58,y=84.82,z=35.80},  
-{map='StormEnd',x=-5.21,y=84.61,z=37.97}, 
-{map='StormEnd',x=0.01,y=84.61,z=32.14}, 
-{map='StormEnd',x=-0.71,y=84.61,z=28.74},  
-{map='StormEnd',x=1.79,y=84.83,z=24.70},  
-{map='StormEnd',x=12.52,y=84.99,z=21.16},  
-{map='StormEnd',x=16.79,y=87.61,z=20.29},  
-{map='StormEnd',x=-10.33,y=84.61,z=24.42},  
-{map='StormEnd',x=3.86,y=84.61,z=20.28},  
-{map='StormEnd',x=4.11,y=84.63,z=17.30},  
-{map='StormEnd',x=7.06,y=85.87,z=5.27},  
-{map='StormEnd',x=-6.20,y=84.75,z=7.19},  
-{map='StormEnd',x=-18.09,y=84.61,z=11.19},  
-{map='StormEnd',x=-18.54,y=84.61,z=0.77},  
-{map='StormEnd',x=-8.31,y=84.72,z=0.12},  
-{map='StormEnd',x=-19.68,y=84.61,z=-14.61},  
-{map='StormEnd',x=-23.36,y=84.62,z=-36.41},  
-{map='StormEnd',x=0.03,y=84.70,z=-24.46},  
-{map='StormEnd',x=4.97,y=84.61,z=-24.47},  
-{map='StormEnd',x=11.01,y=84.62,z=-15.60},  
-{map='StormEnd',x=10.72,y=84.61,z=-13.56},  
-{map='StormEnd',x=-4.40,y=84.73,z=-39.79},  
-{map='StormEnd',x=5.92,y=84.79,z=-48.87},  
-{map='StormEnd',x=6.24,y=84.82,z=-50.21},  
-{map='StormEnd',x=5.65,y=84.84,z=-51.44},  
-{map='StormEnd',x=14.59,y=84.61,z=-51.78},  
-{map='StormEnd',x=15.41,y=84.61,z=-53.67},  
-{map='StormEnd',x=-11.95,y=84.61,z=-58.29},  
-{map='StormEnd',x=-10.93,y=84.61,z=-59.48},  
-{map='StormEnd',x=-2.02,y=84.61,z=-81.64},  
-{map='StormEnd',x=-12.42,y=84.61,z=-74.84},  
-{map='StormEnd',x=8.28,y=84.61,z=-90.41},  
-{map='StormEnd',x=18.82,y=84.76,z=-89.28},  
-{map='StormEnd',x=18.37,y=85.05,z=-91.99},  
-{map='StormEnd',x=0.48,y=84.61,z=-98.60},  
-{map='StormEnd',x=0.67,y=84.74,z=-103.18},  
-{map='StormEnd',x=3.31,y=84.66,z=-119.09},  
-{map='StormEnd',x=-5.89,y=84.63,z=-123.81},  
-{map='StormEnd',x=2.18,y=84.69,z=-129.19},  
-{map='StormEnd',x=-1.64,y=84.74,z=-139.35},  
-{map='StormEnd',x=-2.32,y=84.63,z=-146.77},  
-{map='StormEnd',x=16.09,y=84.95,z=-139.38},  
-{map='StormEnd',x=16.15,y=84.61,z=-153.72},  
-{map='StormEnd',x=9.69,y=84.79,z=-155.74},  
-{map='StormEnd',x=-4.57,y=84.61,z=-162.36},  
-{map='StormEnd',x=0.13,y=84.75,z=-173.92},  
-{map='StormEnd',x=8.27,y=84.70,z=-176.73},  
-{map='StormEnd',x=-4.07,y=84.61,z=-180.96},  
+{map='StormEnd',x=17.45,y=84.61,z=53.20},
+{map='StormEnd',x=11.84,y=84.61,z=50.19},
+{map='StormEnd',x=14.93,y=84.63,z=44.41},
+{map='StormEnd',x=9.66,y=84.61,z=39.77},
+{map='StormEnd',x=10.58,y=84.82,z=35.80},
+{map='StormEnd',x=-5.21,y=84.61,z=37.97},
+{map='StormEnd',x=0.01,y=84.61,z=32.14},
+{map='StormEnd',x=-0.71,y=84.61,z=28.74},
+{map='StormEnd',x=1.79,y=84.83,z=24.70},
+{map='StormEnd',x=12.52,y=84.99,z=21.16},
+{map='StormEnd',x=16.79,y=87.61,z=20.29},
+{map='StormEnd',x=-10.33,y=84.61,z=24.42},
+{map='StormEnd',x=3.86,y=84.61,z=20.28},
+{map='StormEnd',x=4.11,y=84.63,z=17.30},
+{map='StormEnd',x=7.06,y=85.87,z=5.27},
+{map='StormEnd',x=-6.20,y=84.75,z=7.19},
+{map='StormEnd',x=-18.09,y=84.61,z=11.19},
+{map='StormEnd',x=-18.54,y=84.61,z=0.77},
+{map='StormEnd',x=-8.31,y=84.72,z=0.12},
+{map='StormEnd',x=-19.68,y=84.61,z=-14.61},
+{map='StormEnd',x=-23.36,y=84.62,z=-36.41},
+{map='StormEnd',x=0.03,y=84.70,z=-24.46},
+{map='StormEnd',x=4.97,y=84.61,z=-24.47},
+{map='StormEnd',x=11.01,y=84.62,z=-15.60},
+{map='StormEnd',x=10.72,y=84.61,z=-13.56},
+{map='StormEnd',x=-4.40,y=84.73,z=-39.79},
+{map='StormEnd',x=5.92,y=84.79,z=-48.87},
+{map='StormEnd',x=6.24,y=84.82,z=-50.21},
+{map='StormEnd',x=5.65,y=84.84,z=-51.44},
+{map='StormEnd',x=14.59,y=84.61,z=-51.78},
+{map='StormEnd',x=15.41,y=84.61,z=-53.67},
+{map='StormEnd',x=-11.95,y=84.61,z=-58.29},
+{map='StormEnd',x=-10.93,y=84.61,z=-59.48},
+{map='StormEnd',x=-2.02,y=84.61,z=-81.64},
+{map='StormEnd',x=-12.42,y=84.61,z=-74.84},
+{map='StormEnd',x=8.28,y=84.61,z=-90.41},
+{map='StormEnd',x=18.82,y=84.76,z=-89.28},
+{map='StormEnd',x=18.37,y=85.05,z=-91.99},
+{map='StormEnd',x=0.48,y=84.61,z=-98.60},
+{map='StormEnd',x=0.67,y=84.74,z=-103.18},
+{map='StormEnd',x=3.31,y=84.66,z=-119.09},
+{map='StormEnd',x=-5.89,y=84.63,z=-123.81},
+{map='StormEnd',x=2.18,y=84.69,z=-129.19},
+{map='StormEnd',x=-1.64,y=84.74,z=-139.35},
+{map='StormEnd',x=-2.32,y=84.63,z=-146.77},
+{map='StormEnd',x=16.09,y=84.95,z=-139.38},
+{map='StormEnd',x=16.15,y=84.61,z=-153.72},
+{map='StormEnd',x=9.69,y=84.79,z=-155.74},
+{map='StormEnd',x=-4.57,y=84.61,z=-162.36},
+{map='StormEnd',x=0.13,y=84.75,z=-173.92},
+{map='StormEnd',x=8.27,y=84.70,z=-176.73},
+{map='StormEnd',x=-4.07,y=84.61,z=-180.96},
 {map='StormEnd',x=2.72,y=84.75,z=-185.72},
-{map='StormEnd',x=7.59,y=84.69,z=-191.18},  
-{map='StormEnd',x=0.45,y=84.68,z=-190.60},  
-{map='StormEnd',x=0.06,y=84.61,z=-206.35},  
-{map='StormEnd',x=-2.95,y=84.80,z=-210.39},  
-{map='StormEnd',x=8.37,y=84.02,z=-244.69},  
-{map='StormEnd',x=-0.26,y=84.02,z=-251.43},  
-{map='StormEnd',x=8.18,y=84.01,z=-271.81}, 
+{map='StormEnd',x=7.59,y=84.69,z=-191.18},
+{map='StormEnd',x=0.45,y=84.68,z=-190.60},
+{map='StormEnd',x=0.06,y=84.61,z=-206.35},
+{map='StormEnd',x=-2.95,y=84.80,z=-210.39},
+{map='StormEnd',x=8.37,y=84.02,z=-244.69},
+{map='StormEnd',x=-0.26,y=84.02,z=-251.43},
+{map='StormEnd',x=8.18,y=84.01,z=-271.81},
 {map='OrbitMid',x=249.7122802734375,y=1535.53662109375,z=364.0765686035156},
 {map='OrbitMid',x=288.56610107421875,y=1492.737548828125,z=514.9772338867188},
 {map='OrbitMid',x=178.61158752441406,y=1271.0809326171875,z=933.470947265625},
@@ -1188,7 +1188,7 @@ posits = {
 {map='Prairie_Village',name='invisible thing',x=96.71356964111328,y=175.35667419433594,z=265.9364929199219},
 {map='Prairie_Village',name='8 People Door',x=-48.69554138183594,y=182.15054321289062,z=324.2794189453125},
 {map='Prairie_Village',name='Temple',x=126.16890716552734,y=254.21255493164062,z=478.1236572265625},
-{map='Prairie_Cave',name='Prairie soar high OOB',x=314.2340393066406,y=235.1671600341797,z=162.43087768554688}, 
+{map='Prairie_Cave',name='Prairie soar high OOB',x=314.2340393066406,y=235.1671600341797,z=162.43087768554688},
 {map='DayEnd',name='Forest',x=-128.55003356933594,y=106.04075622558594,z=41.26801681518555},
 {map='DayEnd',name='Elder Room',x=-529.508544921875,y=8.83392333984375,z=-213.78453063964844},
 {map='DayHubCave',name='Exit',x=30.72627067565918,y=42.47455596923828,z=0.237472802400589},
@@ -1201,7 +1201,7 @@ posits = {
 {map='RainForest',name='Sunny Forest',x=6.1400275230407715,y=111.99101257324219,z=-61.309600830078125},
 {map='RainShelter',name='To Cave',x=54.64596939086914,y=68.41414642333984,z=43.7832145690918},
 {map='RainShelter',name='To Temple',x=15.340384483337402,y=88.6324691772461,z=119.18212890625},
-{map='RainShelter',name='Forest pit OOB',x=-32.04302215576172,y=206.95440673828125,z=0.1170167475938797}, 
+{map='RainShelter',name='Forest pit OOB',x=-32.04302215576172,y=206.95440673828125,z=0.1170167475938797},
 {map='Rain_Cave',name='Exit',x=-65.55963134765625,y=210.6380157470703,z=-285.0746154785156},
 {map='RainMid',name='Exit',x=-17.595956802368164,y=182.86737060546875,z=400.8680114746094},
 {map='RainEnd',name='Elders Room',x=2.448410749435425,y=8.948872566223145,z=503.58135986328125},
@@ -1385,9 +1385,9 @@ hitarr = {
 }
 
 function indexof(a,b)
-  for k,v in ipairs(a) do 
+  for k,v in ipairs(a) do
     if v == b then
-      return k 
+      return k
     end
   end
   return -1
@@ -1441,7 +1441,7 @@ function setadd(add,flag,val,bfreeze)
     freeze = bfreeze
   }
   gg.setValues(uu)
-  if bfreeze then 
+  if bfreeze then
     gg.addListItems(uu)
   else
     if indexof(sarray,uu[1].address) == -1
@@ -1474,14 +1474,14 @@ function addtostr(add,amount)
   return mp
 end
 
-function toint(n) 
-  local s = tostring(n) 
-  local i, j = s:find('%.') 
-  if i then 
-    return tonumber(s:sub(1, i-1)) 
-  else 
-    return n 
-  end 
+function toint(n)
+  local s = tostring(n)
+  local i, j = s:find('%.')
+  if i then
+    return tonumber(s:sub(1, i-1))
+  else
+    return n
+  end
 end
 
 function tbltostr(tbl)
@@ -1519,14 +1519,14 @@ function loadsave()
   end
   local str = data:read('*a')
   data:close()
-  if str == nil then 
+  if str == nil then
     savedata()
   else
     ert = pcall(load(str))
     if not ert then
       savedata()
     end
-    
+
     if psettings.unblock == nil then
       psettings.unblock = true
     end
@@ -1567,16 +1567,16 @@ function replace(text,bf,tg)
   return retText
 end
 
-function fbyte(str,ka,kb) 
-  local K, F = ka, 16384 + kb 
-  return (str:gsub('%x%x', function(c) 
+function fbyte(str,ka,kb)
+  local K, F = ka, 16384 + kb
+  return (str:gsub('%x%x', function(c)
     local L = K % 274877906944
-    local H = (K - L) / 274877906944 
-    local M = H % 128 
-    c = tonumber(c, 16) 
-    local m = (c + (H - M) / 128) * (2*M + 1) % 256 K = L * F + H + c + m 
-    return string.char(m) 
-  end )) 
+    local H = (K - L) / 274877906944
+    local M = H % 128
+    c = tonumber(c, 16)
+    local m = (c + (H - M) / 128) * (2*M + 1) % 256 K = L * F + H + c + m
+    return string.char(m)
+  end ))
 end
 
 function fpbase()
@@ -1584,12 +1584,14 @@ function fpbase()
   eoffsets.nentity = getadd(rbootloader + poffsets.ptoentity,gg.TYPE_QWORD) + poffsets.ptonentity
   xtest1 = getadd(pbase,gg.TYPE_DWORD)
   xtest2 = getadd(eoffsets.nentity,gg.TYPE_DWORD)
-  gg.alert('Validacion 0: ' .. pbase) -- 4
-  gg.alert('Validacion 1: ' .. gg.TYPE_DWORD) -- 4
+  gg.alert('Validacion pbase: ' .. pbase) -- 526018857336
+  gg.alert('Validacion gg.TYPE_DWORD: ' .. gg.TYPE_DWORD) -- 4
   gg.alert('Validacion 2: ' .. getadd(pbase + 0x10,gg.TYPE_DWORD)) -- 2028550269
+  gg.alert('Validacion eoffsets.nentity: ' .. eoffsets.nentity) --
+  gg.alert('Validacion xtest2: ' .. xtest2) --
   if xtest1 < 0 and getadd(pbase + 0x10,gg.TYPE_DWORD) ~= 371 then
   gg.alert('Cannot find player base!\n1. Game loading is not completed\n2. restart script at home\n3. restart the game')
-  --os.exit()
+  os.exit()
   end
   if xtest2 ~= 1099746509 then
     gg.alert('Cannot find world base!\nsomething is wrong!\nsome features may not work')
@@ -1613,7 +1615,7 @@ function fpbase()
         return;
       end
   end
-  
+
   --gg.toast('failed! trying again...')
   nn = {}
   mm = 0
@@ -1817,15 +1819,15 @@ nn = {}
 mm = {}
 gg.searchNumber(1487508559, gg.TYPE_DWORD,false,nil,prange.a,prange.b)
 nn = gg.getResults(gg.getResultCount())
-for i, v in ipairs(nn) do 
+for i, v in ipairs(nn) do
   mm[i] = {address = v.address +4,flags = 4}
 end
 mm = gg.getValues(mm)
 for i, v in ipairs(mm) do
-  if v.value == 11 then 
+  if v.value == 11 then
     eoffsets.world = v.address + 8
     --gg.addListItems({v})
-    break 
+    break
   end
 end
 if eoffsets.world == 0x00 then gg.toast('err') end
@@ -1848,9 +1850,9 @@ mm = {}
    mm[i]= {address = eoffsets.nentity + poffsets.eflowers + ((i-1) * 8),flags = 16}
  end
  flowers = gg.getValues(mm)
- 
+
  eoffsets.nworld = getadd(eoffsets.nentity - poffsets.ptonworld,gg.TYPE_QWORD)
- 
+
  nn = 0x00
  gg.clearResults()
  ggrange(gg.REGION_CODE_APP)
@@ -1891,7 +1893,7 @@ if andro >= 30 then
   else
     gg.toast('\n𝐒𝐭𝐢𝐥𝐥 𝐚𝐥𝐢𝐯𝐞\n' .. ddd .. ' by Kel')
 end
-  
+
 if psettings.nodamage then
   setadd(pbase + poffsets.pdamage,gg.TYPE_DWORD,0,true)
 end
@@ -1940,7 +1942,7 @@ function debg()
     {address=eoffsets.nentity+poffsets.wwings,flags=gg.TYPE_DWORD,name='wwings'},
   }
   gg.addListItems(bn)
-    
+
   nn = ''
   nn = nn .. tostring(itoh(pbase)) .. ' -- wingcount\n'
   nn = nn .. tostring(itoh(pbase + poffsets.positX)) .. ' position X\n'
@@ -1967,7 +1969,7 @@ end
 function pmove(dis)
   local x,y,z = getadd(pbase + poffsets.positX,gg.TYPE_FLOAT), getadd(pbase + poffsets.positY,gg.TYPE_FLOAT), getadd(pbase + poffsets.positZ,gg.TYPE_FLOAT)
   local radin = getadd(pbase + poffsets.positZ + 0x18,gg.TYPE_FLOAT)
-  
+
   local ax = dis * math.sin(radin)
   local az = dis * math.cos(radin)
   --gg.toast(radin)
@@ -1982,13 +1984,13 @@ function upemote()
   setadd(pbase + poffsets.eused + 0xC,gg.TYPE_DWORD,0,true)
   setadd(pbase + poffsets.eused + 0x10,gg.TYPE_DWORD,0,true)
   setadd(pbase + poffsets.eused + 0x14,gg.TYPE_DWORD,0,true)
-  
+
   getemote()
-  
+
   epoint = pbase + poffsets.uemote
   revert = {}
   cemote = {}
-  for i = 0,128 do 
+  for i = 0,128 do
     gd = epoint + (0x30 * i)
     if getadd(gd - 0x4,gg.TYPE_DWORD) ~= 0 then
       if getadd(gd,gg.TYPE_DWORD) > 3 then
@@ -2000,7 +2002,7 @@ function upemote()
         break
     end
   end
-  
+
   for k,v in pairs(emotelist) do
     for x,z in pairs(cemote) do
       if v[2] == 'emote' and v[1] == z then
@@ -2008,7 +2010,7 @@ function upemote()
       end
     end
   end
-  
+
   if #maxemote == 0 then
     gg.toast('Failed! no completed emote!')
     for k,v in pairs(revert) do
@@ -2068,7 +2070,7 @@ function echange(boo)
   else
     setadd(hitarr[1]+0xD7-0x10,gg.TYPE_DWORD,2089048596,false)
     setstr(hitarr[1]+0x60-0x18,24,'UiEmoteAP10Bubbles')
-      
+
     setadd(hitarr[2]+0xD7-0x10,gg.TYPE_DWORD,-1968658055,false)
     setstr(hitarr[2]+0x60-0x18,24,'UiEmoteAP08DeepBreath')
   end
@@ -2099,7 +2101,7 @@ function getemote()
     if getadd(xd,gg.TYPE_BYTE) < 1 then
       break
     end
-    
+
     cd1 = addtostr(xd,12)
     cd2 = addtostr(xd + 0x18,12)
     cd3 = addtostr(xd + 0x30,24)
@@ -2108,7 +2110,7 @@ function getemote()
     table.insert(emotelist,{cd1,cd2,cd3,xd,cd4,cd5})
   end
   epoint = pbase + poffsets.uemote
-  for i = 0,128 do 
+  for i = 0,128 do
     gd = epoint + (0x30 * i)
     if getadd(gd - 0x4,gg.TYPE_DWORD) ~= 0 then
       table.insert(myemotes,{addtostr(gd - 0x1F,12),getadd(gd + 0x28,gg.TYPE_DWORD),gd - 0x28})
@@ -2133,7 +2135,7 @@ function chemote()
     else
       table.insert(xb2,'[❌] ' .. v[1])
     end
-    
+
   end
   x=gg.choice(xb1,nil,'Your emote')
   q=gg.choice(xb2,nil,'Set emote to')
@@ -2160,7 +2162,7 @@ function schemote()
     if myemotes[x] == nil or emotelist[q] == nil then
       gg.toast('error!')
     else
-      
+
       setadd(emotelist[x][4] + 0xD7,gg.TYPE_DWORD,emotelist[q][5],false)
       gg.toast(emotelist[x][1] .. ' → ' .. emotelist[q][1])
     end
@@ -2211,7 +2213,7 @@ function absflower()
     end
     if getadd(jj + 0xC + 0x70,gg.TYPE_FLOAT) > 0 then
     for j = 0, 2 do
-      --table.insert(tup,{address = jj + 0x70 + (j * 4),flags = gg.TYPE_FLOAT, value = mposit[j + 1]}) 
+      --table.insert(tup,{address = jj + 0x70 + (j * 4),flags = gg.TYPE_FLOAT, value = mposit[j + 1]})
     end
     end
     --gg.addListItems(tmp[i])
@@ -2231,7 +2233,7 @@ function abslight()
     if nn == 1 then
       setadd(eoffsets.nentity + poffsets.wwings + 0x120*(i-1),gg.TYPE_DWORD,4,false)
     end
-    
+
   end
   gg.sleep(200)
   for i = 1,12 do
@@ -2250,7 +2252,7 @@ function absorb()
   end
   gg.setValues(candles)
   gg.setValues(flowers)
-  
+
   gg.clearResults()
   ggrange(4)
   --gg.searchNumber('-842203136',4,false,nil,eoffsets.nentity,pbase)
@@ -2411,7 +2413,7 @@ function portal(str)
   mgc = getcoord(true)
   setstr(xtr + 0x39D0,24,str)
   setstr(xtr + 0x39F0,28,imgs[psettings.cmimage])
-  
+
   setadd(xtr + 0x39AC,gg.TYPE_DWORD,string.len(str),false)
   xar = {
     --{address = xtr + 0x372C,flags=gg.TYPE_DWORD,value=11},
@@ -2444,7 +2446,7 @@ function portal(str)
   }
   gg.setValues(xar)
   --setadd(xtr + 0x372C,gg.TYPE_DWORD,string.len(str),false)
-  
+
   --setadd(xtr,gg.TYPE_DWORD,1,false)
   if psettings.portalspeed then
     gamespeed(8)
@@ -2564,7 +2566,7 @@ function viscandle(bool)
         else
         table.insert(xv,{address = eoffsets.nentity + poffsets.vcandles + (0x70 * i),flags = gg.TYPE_DWORD,value = 0})
       end
-      
+
     else
       break;
     end
@@ -2578,7 +2580,7 @@ gg.clearResults()
 gg.setVisible(false)
 gg.searchNumber('1F;0~~0;65,537D::9', gg.TYPE_FLOAT,false,nil,prange.a,prange.b)
 gg.refineNumber('1.0', gg.TYPE_FLOAT)
-if gg.getResultsCount() == 0 then 
+if gg.getResultsCount() == 0 then
   gg.toast('failed!')
   return;
 end
@@ -2605,7 +2607,7 @@ function inputnum(def)
     input=gg.prompt({'Default : ' .. def}
     	, 	{[1]=def}
     	, 	{[1]='number'})
-    	if input==nil then 	
+    	if input==nil then
     	    return def
     	else
     	    return input[1]
@@ -2643,8 +2645,8 @@ function changehit()
       return
     end
   end
-  
-  
+
+
   if hitarr[1].value ~= 2089048596 then
     for i, v in next, hitarr do
       hitarr[i].value = 2089048596
@@ -2672,7 +2674,7 @@ function startrace(ty)
   {map='Sunset_FlyRace'$$name='sit1'$$x=166.2477569580078$$y=1186.892578125$$z=397.8493957519531}$$
 {map='SunsetRace'$$name='sit2'$$x=156.28892517089844$$y=935.0137329101562$$z=662.2101440429688}$$
 
-  
+
   setadd(eoffsets.nentity + poffsets.rrace,gg.TYPE_DWORD,1,true)
   rcs = 0
   for i=0,50 do
@@ -2700,7 +2702,7 @@ function dorace()
   end
     absflower()
     absorb()
-    
+
     gamespeed(psettings.crspeed*3)
     gg.sleep(psettings.crdelay)
     for i = 0,10 do
@@ -2757,7 +2759,7 @@ function dorace()
 end
 
 function espam()
-  if getadd(pbase + poffsets.magic,gg.TYPE_DWORD) == 0 then 
+  if getadd(pbase + poffsets.magic,gg.TYPE_DWORD) == 0 then
     pmagic(1,1750685908,0)
   end
   adr = pbase + poffsets.magic + 0x28
@@ -2787,7 +2789,7 @@ function mtrigger()
     end
     return;
   end
-  
+
   if crset.enable then
     if mev == 1 then
     if dfs < 0.6 then
@@ -2858,7 +2860,7 @@ function htrigger()
       fastvalue = true
     end
   end
-  
+
 end
 
 function chooseplayer()
@@ -2904,11 +2906,11 @@ function chooseplayer()
     else
       ret = ret - 2
     end
-  if ret == nil or ret < 1 then 
-    return -1 
-  else 
+  if ret == nil or ret < 1 then
+    return -1
+  else
     gg.toast('['..ret..'] '..vid[ret])
-    return ret 
+    return ret
   end
 end
 
@@ -2978,7 +2980,7 @@ function teleplayers()
       gg.toast('camera hook failed!')
       return;
     end
-      
+
     nra = chooseplayer()
     if nra < 1 then return; end
     exma = pbase + poffsets.positX + (nra * 0xFF10)
@@ -3123,7 +3125,7 @@ function hcamera()
       gg.clearResults()
       gg.searchNumber('h 00 00 FA 44 00 00 FA 44 00 00 80 3F',gg.TYPE_BYTE,false,nil,prange.a,prange.b)
       if gg.getResultCount() == 0 then return false end
-      
+
       eoffsets.ncamera = gg.getResults(1)[1].address + 0xB0
     gg.clearResults()
     end
@@ -3168,7 +3170,7 @@ function candlefarm(aa,bb)
   end
   gg.setValues(flowers)
   gg.addListItems(flowers)
-  
+
   for i = aa, bb do
     nyn = getmap()
     ntn = {6974}
@@ -3226,7 +3228,7 @@ function candlefarm(aa,bb)
           portal(nyn)
           gg.sleep(psettings.crdelay)
         end
-        
+
         setposit(c[1],c[2],c[3])
         absorb()
         gg.sleep(psettings.crabsorb)
@@ -3245,7 +3247,7 @@ function candlefarm(aa,bb)
 end
 
 function showmessage()
-  
+
 end
 
 function doorpeek(boo)
@@ -3263,7 +3265,7 @@ function doorpeek(boo)
       gg.setValues(vf)
       nowind()
     end
-    
+
     return;
   end
   vf = {}
@@ -3280,7 +3282,7 @@ function doorpeek(boo)
       end
       table.insert(mf,{x=getadd(dpoint + (0xE0 * i) - 0x74,gg.TYPE_FLOAT),y=getadd(dpoint + (0xE0 * i) - 0x74+0x4,gg.TYPE_FLOAT),z=getadd(dpoint + (0xE0 * i) - 0x74+0x8,gg.TYPE_FLOAT)})
     end
-  end 
+  end
   if #vf == 0 then gg.toast('Doors not detected'); return; end
   hf = gg.choice(vf,nil,'')
   if hf == nil then return; end
@@ -3293,7 +3295,7 @@ function getmagics()
   for i = 0, 512 do
    xbv = xcv + (0x80 * i)
    if getadd(xbv + 0x8,gg.TYPE_DWORD) == 0  and getadd(xbv,gg.TYPE_DWORD) == 0 then
-     
+
      break;
    end
    xse1 = addtostr(xbv - 0x17,20)
@@ -3306,50 +3308,50 @@ function getmagics()
   end
 end
 
-function modmagic(ty) 
-  if ty == 1 then 
-    gg.setVisible(false) 
-    for i = 0, 99 do 
-      if getadd(pbase - poffsets.mymagic + (0x18 * i),gg.TYPE_DWORD) == 0 and getadd(pbase - poffsets.mymagic + (0x18 * i) + 0x10,gg.TYPE_DWORD) < 1 then 
-        break 
-      end 
-    setadd(pbase - poffsets.mymagic + (0x18 * i) + 0x10,gg.TYPE_DWORD,999,false) 
-    end 
-    gg.toast('done') 
-    return; 
-  end 
-  if ty == 2 then 
-    mine = {} 
-    madd = {} 
-    aname = {} 
-    if #allmagics == 0 then 
-      getmagics() 
-    end 
-    for i = 0, 110 do 
-      xco = getadd(pbase - poffsets.mymagic + (0x18 * i),gg.TYPE_DWORD) 
-      xcu = pbase - poffsets.mymagic + (0x18 * i) 
-      if xco == 0 and getadd(xcu + 0x10,gg.TYPE_DWORD) < 1 then 
-        break 
-      end 
-      for k,v in ipairs(allmagics) do 
-        if v[2] == xco then 
+function modmagic(ty)
+  if ty == 1 then
+    gg.setVisible(false)
+    for i = 0, 99 do
+      if getadd(pbase - poffsets.mymagic + (0x18 * i),gg.TYPE_DWORD) == 0 and getadd(pbase - poffsets.mymagic + (0x18 * i) + 0x10,gg.TYPE_DWORD) < 1 then
+        break
+      end
+    setadd(pbase - poffsets.mymagic + (0x18 * i) + 0x10,gg.TYPE_DWORD,999,false)
+    end
+    gg.toast('done')
+    return;
+  end
+  if ty == 2 then
+    mine = {}
+    madd = {}
+    aname = {}
+    if #allmagics == 0 then
+      getmagics()
+    end
+    for i = 0, 110 do
+      xco = getadd(pbase - poffsets.mymagic + (0x18 * i),gg.TYPE_DWORD)
+      xcu = pbase - poffsets.mymagic + (0x18 * i)
+      if xco == 0 and getadd(xcu + 0x10,gg.TYPE_DWORD) < 1 then
+        break
+      end
+      for k,v in ipairs(allmagics) do
+        if v[2] == xco then
           table.insert(mine,v[1])
-          table.insert(madd,xcu) 
-        end 
-      end 
-    end 
-    for k,v in ipairs(allmagics) do 
-      table.insert(aname,v[1]) 
-    end 
-    mxb = gg.choice(mine,nil,'select your magic') 
-    if mxb == nil then 
-      return; 
-    end 
-    mxc = gg.choice(aname,nil,'select what do you want') 
-    if mxc == nil then 
-      return; 
-    end 
-    setadd(madd[mxb],gg.TYPE_DWORD,allmagics[mxc][2],false) 
+          table.insert(madd,xcu)
+        end
+      end
+    end
+    for k,v in ipairs(allmagics) do
+      table.insert(aname,v[1])
+    end
+    mxb = gg.choice(mine,nil,'select your magic')
+    if mxb == nil then
+      return;
+    end
+    mxc = gg.choice(aname,nil,'select what do you want')
+    if mxc == nil then
+      return;
+    end
+    setadd(madd[mxb],gg.TYPE_DWORD,allmagics[mxc][2],false)
   end
 end
 
@@ -3433,7 +3435,7 @@ function dumpmagic()
   if #allmagics == 0 then
     getmagics()
   end
-  
+
 xstr = ''
  xcv = pbase - poffsets.fullmagic
  for k,v in ipairs(allmagics) do
@@ -3455,7 +3457,7 @@ function dumpdata()
  xcv = gg.getResults(1)[1].address
  for i = 0, 512 do
    xbv = xcv + (0x6D0 * i)
-   if getadd(xbv,gg.TYPE_DWORD) == 0 then 
+   if getadd(xbv,gg.TYPE_DWORD) == 0 then
      break;
    end
    xstr = xstr .. 'name : ' .. addtostr(xbv + 0x5B,24) .. '\ntype : ' .. addtostr(xbv + 0x329,24) .. '\nvalue : ' .. getadd(xbv,gg.TYPE_DWORD) .. '\n'
@@ -3513,7 +3515,7 @@ if #eval == 0 then return; end
     setadd(rpoint + (0xC80*i)+0x5AC-0x4,gg.TYPE_DWORD,41249,false)
     end
     for i=0,50 do
-      
+
     evalid = getadd(rpoint + (0xC80*i)+0x30,gg.TYPE_FLOAT)
     if evalid == 0 then
       break
@@ -3529,7 +3531,7 @@ if #eval == 0 then return; end
     if evalid == 0 then
       break
     end
-    
+
     setadd(rpoint + (0xC80*i)+0x5AC,gg.TYPE_DWORD,41249,true)
     setadd(rpoint + (0xC80*i)+0x5AC-0x4,gg.TYPE_DWORD,41249,false)
     gg.sleep(200)
@@ -3774,7 +3776,7 @@ function getfriendnode()
     end
     gg.clearResults()
     ]]--
-  
+
     eoffsets.gnode=eoffsets.nentity - poffsets.enode
     for i = 0, 39 do
       nn = eoffsets.gnode + (0x2E0 * i)
@@ -3785,7 +3787,7 @@ function getfriendnode()
       end
     end
   end
-  
+
 end
 
 function makehidden(str)
@@ -3913,7 +3915,7 @@ function nowind()
           setadd(nn - (y * 0x4),gg.TYPE_FLOAT,0,false)
         end
       end
-      
+
     end
   end
   if kj == false then
@@ -4006,7 +4008,7 @@ function scsettings()
     gg.toast('Bye 👋 ')
     os.exit()
   end
-  
+
   scsettings()
 end
 
@@ -4063,7 +4065,7 @@ function domenu()
             gg.toast('on')
           end
       	end
-    	  
+
       	if x == 4 then
       	  setadd(pbase + poffsets.pdamage,gg.TYPE_DWORD,inputnum(1),false)
       	end
@@ -4095,14 +4097,14 @@ function domenu()
       	end
       	gg.setVisible(false)
       end
-      if m == 2 then 
+      if m == 2 then
         --abslight()
         absorb()
       end
-      if m == 3 then 
+      if m == 3 then
         pmove(psettings.warpdis)
       end
-      if m == 4 then 
+      if m == 4 then
         x=gg.choice({
         '➡️Teleport'
       	,'⏩Change map'
@@ -4124,10 +4126,10 @@ function domenu()
       	,'Set Warp distance'
       	,'Set breaching hotkey'
       	},nil,getmap())
-      	if x == 1 then 
+      	if x == 1 then
       	  telelist()
         end
-      	if x == 2 then 
+      	if x == 2 then
       	   y={}
       	   table.insert(y,'This map(refresh)')
         for i, v in ipairs(cworld) do
@@ -4135,7 +4137,7 @@ function domenu()
         end
         table.insert(y,'⚠️Manual')
          r=gg.choice(y,nil,'')
-         if (r ~= nil) then 
+         if (r ~= nil) then
            if r == #y then
             istr = inputstr()
             if istr ~= nil then
@@ -4157,7 +4159,7 @@ function domenu()
         end
         table.insert(y,'⚠️Crash game')
          r=gg.choice(y,nil,'Select map and use your wing! ')
-         if (r ~= nil) then 
+         if (r ~= nil) then
            gg.setVisible(false)
            if psettings.fhspeed > 1 and fasthome and not teleping then
             fasthome = false
@@ -4180,7 +4182,7 @@ function domenu()
          end
          WhyYouRemoveThisLine = 'by ExMachina'
       	end
-      	if x == 4 then 
+      	if x == 4 then
       	   y={}
       	   if eoffsets.world == 0x00 then
       	      gg.clearResults()
@@ -4203,7 +4205,7 @@ function domenu()
         end
         table.insert(y,'⚠️Manual')
          r=gg.choice(y,nil,'')
-         if (r ~= nil) then 
+         if (r ~= nil) then
            if r == #y then
             istr = inputstr()
             if istr ~= nil then
@@ -4219,11 +4221,11 @@ function domenu()
       	  getpos()
       	  gg.setVisible(false)
       	end
-        if x == 6 then 
-          setposit(px, py, pz) 
+        if x == 6 then
+          setposit(px, py, pz)
           gg.setVisible(false)
         end
-        if x == 7 then 
+        if x == 7 then
           usp = gg.prompt({"Coord X", "Coord Y", "Coord Z"}, {[1]= getadd(pbase+poffsets.positX,gg.TYPE_FLOAT),[2]= getadd(pbase+poffsets.positY,gg.TYPE_FLOAT),[3]= getadd(pbase+poffsets.positZ,gg.TYPE_FLOAT)}, {[1]="number",[1]="number",[1]="number"})
           if usp[1] == nil then
             usp[1] = getadd(pbase+poffsets.positX,gg.TYPE_FLOAT)
@@ -4272,7 +4274,7 @@ function domenu()
         elseif xfr == 2 then
           collectcrab(0)
         end
-        
+
       end
       if x == 15 then
         xfr = gg.choice({'Collect all','Remove all','Idiot','Go to Krill'})
@@ -4306,7 +4308,7 @@ function domenu()
       	},nil,'')
           if k == 1 then mev = 0 end
           if k == 2 then
-            mev = 1 
+            mev = 1
             setadd(pbase + poffsets.pshout,gg.TYPE_FLOAT,2.0,false)
           end
           if k == 3 then mev = 2 end
@@ -4320,17 +4322,17 @@ function domenu()
           nnn = nnn .. '}},\n'
           gg.copyText(nnn)
         end
-        
+
       end
       if m == 5 then
-        
+
          x=gg.choice({
            '🔄Wing fast Recharge',
            '⏫Wing force',
            '➡️Jet fly mode',
            '⏩Ground acceleration',
            '⏭Engine speed',
-           '↗️Jump acceleration', 
+           '↗️Jump acceleration',
            '⤴️Jump distance',
            '🔼Gravity',
            '🏂Slide mode',
@@ -4346,7 +4348,7 @@ function domenu()
            '📥No item cool down',
            '🦿No movement block'
          },nil,'')
-          if x == 1 then 
+          if x == 1 then
             if getadd(eoffsets.cspeed,gg.TYPE_FLOAT) >= 3.0 then
               setadd(eoffsets.cspeed,gg.TYPE_FLOAT,2.5,false)
               gg.toast('off')
@@ -4355,7 +4357,7 @@ function domenu()
               gg.toast('on')
             end
           end
-         if x == 2 then 
+         if x == 2 then
            setadd(eoffsets.wforce,gg.TYPE_FLOAT,inputnum(1.0),false)
          end
         if x == 3 then
@@ -4368,17 +4370,17 @@ function domenu()
               gg.toast('on')
             end
         end
-        if x == 4 then 
+        if x == 4 then
            setadd(eoffsets.sspeed,gg.TYPE_FLOAT,inputnum(3.5),false)
         end
-        if x == 5 then 
+        if x == 5 then
           gamespeed(inputnum(1))
           gg.setVisible(false)
         end
-        if x == 6 then 
+        if x == 6 then
            setadd(eoffsets.jump,gg.TYPE_FLOAT,inputnum(4.9),false)
         end
-        if x == 7 then 
+        if x == 7 then
            setadd(eoffsets.jforce,gg.TYPE_FLOAT,inputnum(1),false)
         end
         if x == 8 then
@@ -4393,7 +4395,7 @@ function domenu()
             gg.toast('on')
           end
         end
-        if x == 10 then 
+        if x == 10 then
           if eoffsets.gframe == 0x00 then
             eoffsets.gframe = getadd(rbootloader + poffsets.ptofps,gg.TYPE_QWORD) + 0x160
           end
@@ -4402,7 +4404,7 @@ function domenu()
           psettings.ufps = vframe
           savedata()
         end
-        if x == 11 then 
+        if x == 11 then
            setadd(pbase + poffsets.bsize,gg.TYPE_FLOAT,inputnum(0),true)
         end
         if x == 12 then
@@ -4461,7 +4463,7 @@ function domenu()
             fastvalue = false
             gg.toast('on')
           end
-          
+
         end
         if x == 16 then
           setadd(eoffsets.glight,gg.TYPE_FLOAT,inputnum(1),false)
@@ -4493,7 +4495,7 @@ function domenu()
         end
         gg.setVisible(false)
       end
-        
+
       if m == 6 then
          x=gg.choice({
            '🎹Walking piano'
@@ -4521,7 +4523,7 @@ function domenu()
          x = 0
        end
         gg.setVisible(false)
-        if x == 1 then 
+        if x == 1 then
           adr = pbase + poffsets.gesture
           if isfreeze(adr) then
             setadd(adr,gg.TYPE_DWORD,65793,false)
@@ -4531,7 +4533,7 @@ function domenu()
             gg.toast('on')
           end
         end
-        if x == 2 then 
+        if x == 2 then
           espam()
         end
         if x == 3 then
@@ -4543,7 +4545,7 @@ function domenu()
             setadd(adr,gg.TYPE_DWORD,5,true)
           end
         end
-        
+
         if x == 4 then
           if getadd(pbase - poffsets.sglow,gg.TYPE_FLOAT) < 2 then
             setadd(pbase - poffsets.sglow,gg.TYPE_FLOAT,40000,false)
@@ -4731,7 +4733,7 @@ function domenu()
         end
         gg.setVisible(false)
       end
-      
+
       if m == 7 then
         magicmenu()
       end
@@ -4756,7 +4758,7 @@ function domenu()
        if x == 4 then
          schemote()
        end
-       
+
       end
       if m == 9 then
          y={}
@@ -4764,7 +4766,7 @@ function domenu()
           table.insert(y,pid[i][2])
         end
          x=gg.choice(y,nil,'')
-         if (x ~= nil) then 
+         if (x ~= nil) then
            if pid[x][3] ~= nil then
             setdesk(pid[x][3],pid[x][4])
            end
@@ -4772,7 +4774,7 @@ function domenu()
             gg.setVisible(false)
          end
       end
-      if m == 10 then 
+      if m == 10 then
         x=gg.choice({
            'Auto wing farm'
            ,'⚠️Auto candle farm⚠️'
@@ -4819,7 +4821,7 @@ function domenu()
             wingfarm(46,47)
           end
        end
-       
+
        if x == 2 then
          y=gg.choice({
            'All'
@@ -4879,7 +4881,7 @@ function domenu()
             setadd(eoffsets.nentity + poffsets.ucandle,gg.TYPE_DWORD,getadd(eoffsets.nentity + poffsets.ucandle,gg.TYPE_DWORD),true)
             gg.toast('on')
           end
-            
+
         end
         if x == 7 then
           gg.setVisible(false)
@@ -5006,7 +5008,7 @@ function domenu()
         else
           gg.toast('Hook camera failed!')
         end
-        
+
       end
       if m==12 then
         teleplayers()
@@ -5073,7 +5075,7 @@ function domenu()
         end
       end
         --absflower()
-      
+
 end
 
 function hsmenu()
@@ -5247,7 +5249,7 @@ function srmenu()
     else
     srset.level = exsub[vwr-1]
   end
-  
+
   bg = {getadd(pbase+poffsets.mspirit+(srset.level*poffsets.srpattern),gg.TYPE_FLOAT),getadd(pbase+poffsets.mspirit+(srset.level*poffsets.srpattern)+0x4,gg.TYPE_FLOAT),getadd(pbase+poffsets.mspirit+(srset.level*poffsets.srpattern)+0x8,gg.TYPE_FLOAT)}
   setposit(bg[1],bg[2],bg[3])
   end
@@ -5258,7 +5260,7 @@ function srmenu()
     end
     table.insert(y,'⚠️Crash game')
     r=gg.choice(y,nil,'Select map and use your wing! ')
-    if (r ~= nil) then 
+    if (r ~= nil) then
       gg.setVisible(false)
       if psettings.fhspeed > 1 and fasthome and not teleping then
         fasthome = false
@@ -5345,7 +5347,7 @@ function crmenu()
         end
         table.insert(y,'⚠️Crash game')
          r=gg.choice(y,nil,'Select map and use your wing! ')
-         if (r ~= nil) then 
+         if (r ~= nil) then
            gg.setVisible(false)
            if psettings.fhspeed > 1 and fasthome and not teleping then
             fasthome = false
@@ -5395,7 +5397,7 @@ function crmenu()
       end
       return
     end
-    
+
   end
   --gg.toast(#crarray)
   if hq ~= crset.map or #crarray == 0 then
@@ -5483,7 +5485,7 @@ function crmenu()
     end
     table.insert(y,'⚠️Crash game')
     r=gg.choice(y,nil,'Select map and use your wing! ')
-    if (r ~= nil) then 
+    if (r ~= nil) then
       gg.setVisible(false)
       if psettings.fhspeed > 1 and fasthome and not teleping then
         fasthome = false
@@ -5533,7 +5535,7 @@ function crmenu()
       	},nil,'')
     if k == 1 then mev = 0 end
     if k == 2 then
-      mev = 1 
+      mev = 1
       setadd(pbase + poffsets.pshout,gg.TYPE_FLOAT,2.0,false)
     end
     if k == 3 then mev = 2 end
@@ -5611,7 +5613,7 @@ function wrmenu()
         end
         table.insert(y,'⚠️Crash game')
          r=gg.choice(y,nil,'Select map and use your wing! ')
-         if (r ~= nil) then 
+         if (r ~= nil) then
            gg.setVisible(false)
            if psettings.fhspeed > 1 and fasthome and not teleping then
             fasthome = false
@@ -5642,7 +5644,7 @@ function wrmenu()
       end
       return
     end
-    
+
   end
   --gg.toast(#wrarray)
   if hq ~= wrset.map or #wrarray == 0 then
@@ -5652,8 +5654,8 @@ function wrmenu()
     wrmenu()
     return;
   end
-  
-  
+
+
   jy=gg.choice({'➡️Next Point',
     '⬅️Previous Point',
     '⬆️Breach Wall',
@@ -5718,7 +5720,7 @@ function wrmenu()
         end
         table.insert(y,'⚠️Crash game')
          r=gg.choice(y,nil,'Select map and use your wing! ')
-         if (r ~= nil) then 
+         if (r ~= nil) then
            gg.setVisible(false)
            if psettings.fhspeed > 1 and fasthome and not teleping then
             fasthome = false
@@ -5769,7 +5771,7 @@ function spinmenu()
     gg.toast('off')
     return;
   end
-  
+
   spnf = gg.choice({'Spin','Moon Walk','Front lock','Random','Ghost Walk : ' .. boolling(spinset.lby),'Spin speed'},nil,'')
   if spnf == nil then
     return;
@@ -5815,13 +5817,13 @@ function telemenu()
       table.insert(xq,{address = eoffsets.ncamera-0x70+0x4,flags=gg.TYPE_FLOAT})
       table.insert(xq,{address = eoffsets.ncamera-0x70+0x8,flags=gg.TYPE_FLOAT})
       gg.removeListItems(xq)
-    
+
     teleparr.spec = false
     teleparr.follow = false
     teleparr.collect = false
     teleparr.hide = false
     teleparr.enable = false
-    
+
     return;
   end
 end
@@ -5936,20 +5938,20 @@ while true do
     spinloop()
   end
   if resettick > -1 then
-    resettick = resettick - 1 
+    resettick = resettick - 1
     if resettick < 1 then
       resetfriendnode()
       resettick = -1
     end
   end
   if magictick > -1 then
-    magictick = magictick + 1 
+    magictick = magictick + 1
     if magictick > 4 then
       pmagic(7,rmarray[math.random(1,#rmarray)],1)
       magictick = 0
     end
   end
-  
+
   if gg.isClickedUiButton() then
     if crset.enable then
       crmenu()
