@@ -1587,7 +1587,9 @@ function fpbase()
   gg.alert('Validacion 0: ' .. gg.TYPE_DWORD) -- 4
   gg.alert('Validacion 1: ' .. getadd(pbase + 0x10,gg.TYPE_DWORD)) -- 2028550269
   validationTest = (getadd(pbase + 0x10,gg.TYPE_DWORD) ~= 371)
-  gg.alert('Validacion 2: ' .. validationTest.tostring) -- 
+  if validationTest
+  gg.alert('Validacion 2: true') -- true
+  end
   if xtest1 < 0 and getadd(pbase + 0x10,gg.TYPE_DWORD) ~= 371 then
   gg.alert('Cannot find player base!\n1. Game loading is not completed\n2. restart script at home\n3. restart the game')
   --os.exit()
