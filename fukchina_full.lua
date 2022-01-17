@@ -1584,7 +1584,7 @@ function fpbase()
   eoffsets.nentity = getadd(rbootloader + poffsets.ptoentity,gg.TYPE_QWORD) + poffsets.ptonentity
   xtest1 = getadd(pbase,gg.TYPE_DWORD)
   xtest2 = getadd(eoffsets.nentity,gg.TYPE_DWORD)
-  gg.alert('Validacion 0: ' .. pbase) -- 
+  gg.alert('Validacion 0: ' .. pbase) -- 4
   gg.alert('Validacion 1: ' .. gg.TYPE_DWORD) -- 4
   gg.alert('Validacion 2: ' .. getadd(pbase + 0x10,gg.TYPE_DWORD)) -- 2028550269
   if xtest1 < 0 and getadd(pbase + 0x10,gg.TYPE_DWORD) ~= 371 then
