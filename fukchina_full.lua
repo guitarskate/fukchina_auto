@@ -1593,7 +1593,7 @@ function fpbase()
   end
   --methods for unexpected errors
   --07.30 no longer used
-  --[[
+  --[
   gg.clearResults()
   nn = {}
   mm = {}
@@ -1621,7 +1621,7 @@ function fpbase()
     pbase = nn[1].address - 0x58
     return
   end
-  ]]--
+  --]]--
 end
 
 function vcheck()
@@ -2530,7 +2530,9 @@ function setposit(mx,my,mz)
       value = mx
     },
     {
-      address = pbase + poffsets.positY,
+      address = 
+      
+      + poffsets.positY,
       flags = gg.TYPE_FLOAT,
       value = my
     },
