@@ -1587,7 +1587,7 @@ function fpbase()
   gg.alert('Validacion 0: ' .. gg.TYPE_DWORD) -- 4
   gg.alert('Validacion 1: ' .. getadd(pbase + 0x10,gg.TYPE_DWORD)) -- 2028550269
   validationTest = (getadd(pbase + 0x10,gg.TYPE_DWORD) ~= 371)
-  if validationTest
+  if validationTest then
   gg.alert('Validacion 2: true') -- true
   end
   if xtest1 < 0 and getadd(pbase + 0x10,gg.TYPE_DWORD) ~= 371 then
