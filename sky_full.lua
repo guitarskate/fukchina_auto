@@ -125,50 +125,50 @@ function START()
       charg.. 'Recargar alas', -- 6
       under.. 'traspasar piso', -- 7
       jump.. 'saltos largos', -- 8
-      flygravity.. 'Fly gravity',
-      noequip.. 'Hide equipent',
-      texture.. 'Stretch texture (must go through gate)',
-      cloudss.. 'Remover nubes',
-      'EXIT'
+      flygravity.. 'Fly gravity', -- 9
+      noequip.. 'Hide equipent', -- 10
+      texture.. 'Stretch texture (must go through gate)', -- 11
+      cloudss.. 'Remover nubes', -- 12
+      'Salir' -- 13
       },nil,'Select cheat')
   if menu == nil then return; end
-  
-  if menu[13] then
-    wiping() 
+
+  if menu == 13 then
+    wiping()
   else
-    if menu[1] then 
+    if menu == 1 then
       infinityLight()
     end
-    
-    if menu[2] then
+
+    if menu == 2 then
       maxLevelWing()
     end
-    
-    if menu[3] then
+
+    if menu == 3 then
       wingPower()
     end
 
-    if menu[4] then
+    if menu == 4 then
       smootherGraphixs()
     end
-    
-    if menu[5] then
+
+    if menu == 5 then
       quickSteep()
     end
-    
-    if menu[6] then
+
+    if menu == 6 then
       rechargeLight()
     end
-    
-    if menu[7] then
+
+    if menu == 7 then
       underground()
     end
-    
-    if menu[8] then
+
+    if menu == 8 then
       jumpDistance()
     end
-    
-    if menu[9] then
+
+    if menu == 9 then
       if flygravity == on then
         flygravity = off
         gg.setValues(revertflygravity)
@@ -180,8 +180,8 @@ function START()
         gg.toast('flygravity activated')
       end
     end
-    
-    if menu[10] then
+
+    if menu == 10 then
       if noequip == on then
         noequip = off
         gg.setValues(revertequipment)
@@ -214,8 +214,8 @@ function START()
         end
       end
     end
-    
-    if menu[11] then
+
+    if menu == 11 then
       if texture == on then
         texture = off
         gg.setValues(reverttexture)
@@ -248,11 +248,11 @@ function START()
         end
       end
     end
-    
-    if menu[12] then
+
+    if menu == 12 then
       removeClouds()
     end
-  end  
+  end
   gg.setRanges(old)
 end
 
