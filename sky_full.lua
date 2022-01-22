@@ -456,95 +456,10 @@ end
 
 
 
-function collectkrill(uy)
-  frz = true
-  eval = {}
-  pattern = 0x2B0
-  rpoint = eoffsets.nentity - poffsets.ecrabs - 0xC170
-  mpoint = getcoord(true)
-  if uy == 0 then
-    for i=0,10 do
-    evalid = getadd(rpoint + (pattern*i)+0x30,gg.TYPE_FLOAT)
-    if evalid == 0 then
-      break
-    end
-    --eposit = {getadd(rpoint + (0xC80*i),gg.TYPE_FLOAT),getadd(rpoint + (0xC80*i)+0x4,gg.TYPE_FLOAT),getadd(rpoint + (0xC80*i)+0x8,gg.TYPE_FLOAT)}
-    table.insert(eval,{address=rpoint + (pattern*i)+0x4,flags=gg.TYPE_FLOAT,value=-999,freeze=true,name='krillY'})
-    end
-if #eval == 0 then return; end
-  --gg.setValues(eval)
-  if isfreeze(rpoint) then
-    gg.removeListItems(eval)
-    gg.toast('off')
-    else
-    gg.addListItems(eval)
-    gg.toast('on')
-  end
-  return;
-  end
-  if uy == 1 then
-    for i=0,10 do
-    --detec : 1D0
-    evalid = getadd(rpoint + (pattern*i),gg.TYPE_FLOAT)
-    if evalid == 0 then
-      break
-    end
-      table.insert(eval,{address=rpoint + (pattern*i),flags=gg.TYPE_FLOAT,value=mpoint[1]})
-      table.insert(eval,{address=rpoint + (pattern*i)+0x4,flags=gg.TYPE_FLOAT,value=mpoint[2]})
-      table.insert(eval,{address=rpoint + (pattern*i)+0x8,flags=gg.TYPE_FLOAT,value=mpoint[3]})
-    end
-    gg.setValues(eval)
-    return;
-  end
-  if uy == 2 then
-    for i=0,10 do
-    --detec : 1D0
-    evalid = getadd(rpoint + (pattern*i),gg.TYPE_FLOAT)
-    if evalid == 0 then
-      break
-    end
-    if isfreeze(rpoint+(pattern*i)+0x24) then
-      setadd(rpoint+(pattern*i)+0x24,gg.TYPE_FLOAT,0,false)
-    else
-      setadd(rpoint+(pattern*i)+0x24,gg.TYPE_FLOAT,0,true)
-    end
-    end
-    return;
-  end
-  if uy == 3 then
-    for i=0,10 do
-    --detec : 1D0
-    evalid = getadd(rpoint + (pattern*i),gg.TYPE_FLOAT)
-    if evalid == 0 then
-      break
-    end
-    if isfreeze(rpoint+(pattern*i)+0x1AC) then
-      setadd(rpoint+(pattern*i)+0x1AC,gg.TYPE_DWORD,257,false)
-    else
-      setadd(rpoint+(pattern*i)+0x1AC,gg.TYPE_DWORD,257,true)
-    end
-    end
-    return;
-  end
-  if uy == 4 then
-    for i=0,10 do
-    --detec : 1D0
-    evalid = getadd(rpoint + (pattern*i),gg.TYPE_FLOAT)
-    if evalid == 0 then
-      break
-    end
-    if isfreeze(rpoint+(pattern*i)+0x1AC) then
-      setadd(rpoint+(pattern*i)+0x1AC,gg.TYPE_DWORD,258,false)
-    else
-      setadd(rpoint+(pattern*i)+0x1AC,gg.TYPE_DWORD,258,true)
-    end
-    end
-    return;
-  end
-  if uy == 5 then
-    setposit(getadd(rpoint,gg.TYPE_FLOAT),getadd(rpoint+0x4,gg.TYPE_FLOAT),getadd(rpoint+0x8,gg.TYPE_FLOAT))
-  end
-end
+
+
+
+
 
 function breachWall()
   adr = pbase + poffsets.pwing
