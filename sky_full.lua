@@ -433,8 +433,6 @@ function quickSteep() -- menu 5
     end
   end
 end
-  
--- HI
 
 function rechargeLight() -- menu 6
   charg = on
@@ -486,6 +484,11 @@ end
 
 
 
+  
+  
+  
+  
+  
 
 function showAllCandles()
   if candles == on then
@@ -515,17 +518,6 @@ function viscandle(bool)
    end
   end
   gg.setValues(xv)
-end
-
-function breachWall()
-  adr = pbase + poffsets.pwing
-  if isfreeze(adr) then
-    setadd(adr,gg.TYPE_FLOAT,14,false)
-    gg.toast('off')
-  else
-    setadd(adr,gg.TYPE_FLOAT,inputnum(14),true)
-    gg.toast('on')
-  end
 end
 
 function getadd(add,flag)
