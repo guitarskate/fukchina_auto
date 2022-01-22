@@ -22,6 +22,7 @@ flygravity = off
 noequip = off
 texture = off
 cloudss = off
+candles = off
 
 
 
@@ -129,11 +130,12 @@ function START()
       noequip.. 'Hide equipent', -- 10
       texture.. 'Stretch texture (must go through gate)', -- 11
       cloudss.. 'Remover nubes', -- 12
-      'Salir' -- 13
+      candles.. 'Mostrar todas las velas', -- 13
+      'Salir' -- 14
       },nil,'Select cheat')
   if menu == nil then return; end
 
-  if menu == 13 then
+  if menu == 14 then
     wiping()
   else
     if menu == 1 then
@@ -252,6 +254,9 @@ function START()
     if menu == 12 then
       removeClouds()
     end
+    if menu == 13 then
+      showAllCandles()
+    end
   end
   gg.setRanges(old)
 end
@@ -320,12 +325,12 @@ end
 function wingPower() -- menu 3
   pwr = gg.choice({
       'OFF',
-      'soft',
-      'strong',
-      'strong extreme',
-      'explore new hights',
-      'To high? Fly down',
-      'BACK'
+      'Suave',
+      'Fuerte',
+      'Extremadamente fuerte',
+      'Explorar nuevas alturas',
+      '¿En lo alto? Volar hacia abajo',
+      'Atras'
       },nil,'WARNING, DONT TRAP YOUR SELF')
   if pwr == nil then
     noselect()
@@ -405,9 +410,9 @@ end
 
 function rechargeLight() -- menu 6
   charg = on
-  chargwing[1].value = '15.5'
+  chargwing[1].value = '4.5'
   gg.setValues(chargwing)
-  gg.sleep(500)
+  gg.sleep(8000)
   gg.setValues(revertchargwing)
   charg = off
 end
@@ -454,96 +459,34 @@ end
 
 
 
+function showAllCandles()
+  if candles == on then
+      candles = off
+      viscandle(false)
+      gg.toast('Velas Inactivas')
+    else
+      candles = on
+      viscandle(true)
+      gg.toast('Velas Activas')
+    end
+end
 
+function viscandle(bool)
+  xv = {}
+  vcandles = 0x501BB4
+  for i = 0,128 do
+   if getadd(0x00 + vcandles + (0x70 * i) - 0x4,gg.TYPE_DWORD) ~= 0 then
+     if bool then
+       table.insert(xv,{address = 0x00 + vcandles + (0x70 * i),flags = gg.TYPE_DWORD,value = 28673})
+       else
+       table.insert(xv,{address = 0x00 + vcandles + (0x70 * i),flags = gg.TYPE_DWORD,value = 0})
+     end
 
-function collectkrill(uy)
-  frz = true
-  eval = {}
-  pattern = 0x2B0
-  rpoint = eoffsets.nentity - poffsets.ecrabs - 0xC170
-  mpoint = getcoord(true)
-  if uy == 0 then
-    for i=0,10 do
-    evalid = getadd(rpoint + (pattern*i)+0x30,gg.TYPE_FLOAT)
-    if evalid == 0 then
-      break
-    end
-    --eposit = {getadd(rpoint + (0xC80*i),gg.TYPE_FLOAT),getadd(rpoint + (0xC80*i)+0x4,gg.TYPE_FLOAT),getadd(rpoint + (0xC80*i)+0x8,gg.TYPE_FLOAT)}
-    table.insert(eval,{address=rpoint + (pattern*i)+0x4,flags=gg.TYPE_FLOAT,value=-999,freeze=true,name='krillY'})
-    end
-if #eval == 0 then return; end
-  --gg.setValues(eval)
-  if isfreeze(rpoint) then
-    gg.removeListItems(eval)
-    gg.toast('off')
-    else
-    gg.addListItems(eval)
-    gg.toast('on')
+   else
+     break;
+   end
   end
-  return;
-  end
-  if uy == 1 then
-    for i=0,10 do
-    --detec : 1D0
-    evalid = getadd(rpoint + (pattern*i),gg.TYPE_FLOAT)
-    if evalid == 0 then
-      break
-    end
-      table.insert(eval,{address=rpoint + (pattern*i),flags=gg.TYPE_FLOAT,value=mpoint[1]})
-      table.insert(eval,{address=rpoint + (pattern*i)+0x4,flags=gg.TYPE_FLOAT,value=mpoint[2]})
-      table.insert(eval,{address=rpoint + (pattern*i)+0x8,flags=gg.TYPE_FLOAT,value=mpoint[3]})
-    end
-    gg.setValues(eval)
-    return;
-  end
-  if uy == 2 then
-    for i=0,10 do
-    --detec : 1D0
-    evalid = getadd(rpoint + (pattern*i),gg.TYPE_FLOAT)
-    if evalid == 0 then
-      break
-    end
-    if isfreeze(rpoint+(pattern*i)+0x24) then
-      setadd(rpoint+(pattern*i)+0x24,gg.TYPE_FLOAT,0,false)
-    else
-      setadd(rpoint+(pattern*i)+0x24,gg.TYPE_FLOAT,0,true)
-    end
-    end
-    return;
-  end
-  if uy == 3 then
-    for i=0,10 do
-    --detec : 1D0
-    evalid = getadd(rpoint + (pattern*i),gg.TYPE_FLOAT)
-    if evalid == 0 then
-      break
-    end
-    if isfreeze(rpoint+(pattern*i)+0x1AC) then
-      setadd(rpoint+(pattern*i)+0x1AC,gg.TYPE_DWORD,257,false)
-    else
-      setadd(rpoint+(pattern*i)+0x1AC,gg.TYPE_DWORD,257,true)
-    end
-    end
-    return;
-  end
-  if uy == 4 then
-    for i=0,10 do
-    --detec : 1D0
-    evalid = getadd(rpoint + (pattern*i),gg.TYPE_FLOAT)
-    if evalid == 0 then
-      break
-    end
-    if isfreeze(rpoint+(pattern*i)+0x1AC) then
-      setadd(rpoint+(pattern*i)+0x1AC,gg.TYPE_DWORD,258,false)
-    else
-      setadd(rpoint+(pattern*i)+0x1AC,gg.TYPE_DWORD,258,true)
-    end
-    end
-    return;
-  end
-  if uy == 5 then
-    setposit(getadd(rpoint,gg.TYPE_FLOAT),getadd(rpoint+0x4,gg.TYPE_FLOAT),getadd(rpoint+0x8,gg.TYPE_FLOAT))
-  end
+  gg.setValues(xv)
 end
 
 function breachWall()
@@ -555,6 +498,16 @@ function breachWall()
     setadd(adr,gg.TYPE_FLOAT,inputnum(14),true)
     gg.toast('on')
   end
+end
+
+function getadd(add,flag)
+  local uu = {}
+  uu[1] = {
+    address = add,
+    flags = flag
+  }
+  yy = gg.getValues(uu)
+  return tonumber(yy[1].value)
 end
 
 function wiping()
