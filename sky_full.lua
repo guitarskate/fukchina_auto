@@ -397,11 +397,11 @@ end
 
 function quickSteep() -- menu 5
   menuQuickSteep = gg.choice({
-      'OFF',
-      '🚲Rapido',
-      '♋︎Naruto',
-      '⚡️Flash',
-      'Atras'
+      'OFF', -- 1
+      '🚲Rapido', -- 2
+      '♋︎Naruto', -- 3
+      '⚡️Flash', -- 4
+      'Atras' -- 5
       },nil,'WARNING, DONT TRAP YOUR SELF')
   if menuQuickSteep == nil then
     noselect()
