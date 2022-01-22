@@ -405,7 +405,7 @@ end
 
 function rechargeLight() -- menu 6
   charg = on
-  chargwing[1].value = '14.5'
+  chargwing[1].value = '15.5'
   gg.setValues(chargwing)
   gg.sleep(500)
   gg.setValues(revertchargwing)
