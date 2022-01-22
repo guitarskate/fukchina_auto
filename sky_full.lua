@@ -131,130 +131,128 @@ function START()
       cloudss.. 'Remover nubes',
       'EXIT'
       },nil,'Select cheat')
-  if menu == nil then
-    noselect()
+  if menu == nil then return; end
+  
+  if menu[13] then
+    wiping() 
   else
-    if menu[13] then
-      wiping() 
-    else
-      if menu[1] then 
-        infinityLight()
-      end
-      
-      if menu[2] then
-        maxLevelWing()
-      end
-      
-      if menu[3] then
-        wingPower()
-      end
+    if menu[1] then 
+      infinityLight()
+    end
+    
+    if menu[2] then
+      maxLevelWing()
+    end
+    
+    if menu[3] then
+      wingPower()
+    end
 
-      if menu[4] then
-        smootherGraphixs()
+    if menu[4] then
+      smootherGraphixs()
+    end
+    
+    if menu[5] then
+      quickSteep()
+    end
+    
+    if menu[6] then
+      rechargeLight()
+    end
+    
+    if menu[7] then
+      underground()
+    end
+    
+    if menu[8] then
+      jumpDistance()
+    end
+    
+    if menu[9] then
+      if flygravity == on then
+        flygravity = off
+        gg.setValues(revertflygravity)
+        gg.toast('flygravity deactivated')
+      else
+        flygravity = on
+        flygrvt[1].value = '5'
+        gg.setValues(flygrvt)
+        gg.toast('flygravity activated')
       end
-      
-      if menu[5] then
-        quickSteep()
-      end
-      
-      if menu[6] then
-        rechargeLight()
-      end
-      
-      if menu[7] then
-        underground()
-      end
-      
-      if menu[8] then
-        jumpDistance()
-      end
-      
-      if menu[9] then
-        if flygravity == on then
-          flygravity = off
-          gg.setValues(revertflygravity)
-          gg.toast('flygravity deactivated')
-        else
-          flygravity = on
-          flygrvt[1].value = '5'
-          gg.setValues(flygrvt)
-          gg.toast('flygravity activated')
-        end
-      end
-      
-      if menu[10] then
-        if noequip == on then
-          noequip = off
-          gg.setValues(revertequipment)
-          gg.toast('Equipment deactivated')
-        else
-          if str2 then
-            noequip = on
-            for i, v in ipairs(equipment) do
-              gg.setValues(equipment)
-            end
-            gg.toast('Equipment activated')
-          else
-            str2 = true
-            gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_ANONYMOUS | gg.REGION_OTHER)
-            gg.clearResults()
-            gg.searchNumber('1.0F;1.0F;1.0F;1.0F;1.0F;-32D;-128D;1.0F;1.0F:41', gg.TYPE_FLOAT)
-            gg.refineNumber('1', gg.TYPE_FLOAT)
-            equipment = gg.getResults(5000)
-            gg.clearResults()
-            revertequipment = {}
-            for i, v in ipairs(equipment) do
-              revertequipment[i] = {address = v.address, flags = v.flags, value = v.value}
-            end
-            noequip = on
-            for i, v in ipairs(equipment) do
-              equipment[i].value = '0'
-              gg.setValues(equipment)
-            end
-            gg.toast('Equipment activated')
+    end
+    
+    if menu[10] then
+      if noequip == on then
+        noequip = off
+        gg.setValues(revertequipment)
+        gg.toast('Equipment deactivated')
+      else
+        if str2 then
+          noequip = on
+          for i, v in ipairs(equipment) do
+            gg.setValues(equipment)
           end
+          gg.toast('Equipment activated')
+        else
+          str2 = true
+          gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_ANONYMOUS | gg.REGION_OTHER)
+          gg.clearResults()
+          gg.searchNumber('1.0F;1.0F;1.0F;1.0F;1.0F;-32D;-128D;1.0F;1.0F:41', gg.TYPE_FLOAT)
+          gg.refineNumber('1', gg.TYPE_FLOAT)
+          equipment = gg.getResults(5000)
+          gg.clearResults()
+          revertequipment = {}
+          for i, v in ipairs(equipment) do
+            revertequipment[i] = {address = v.address, flags = v.flags, value = v.value}
+          end
+          noequip = on
+          for i, v in ipairs(equipment) do
+            equipment[i].value = '0'
+            gg.setValues(equipment)
+          end
+          gg.toast('Equipment activated')
         end
       end
-      
-      if menu[11] then
-        if texture == on then
-          texture = off
-          gg.setValues(reverttexture)
-          gg.toast('Texture deactivated, must go through gate')
-        else
-          if str3 then
-            texture = on
-            for i, v in ipairs(textures) do
-              gg.setValues(textures)
-              gg.toast('Textures activated, must go through gate')
-            end
-          else
-            str3 = true
-            gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_ANONYMOUS | gg.REGION_OTHER)
-            gg.searchNumber('h 06 00 00 00 61 00 00 00 00 00 00 3F 2B 00 04 00', gg.TYPE_BYTE)
-            gg.refineNumber('h 00 00 00 3F', gg.TYPE_BYTE)
-            gg.refineNumber('h 00 00 00', gg.TYPE_BYTE)
-            textures = gg.getResults(32)
-            gg.clearResults()
-            reverttexture = {}
-            for i, v in ipairs(textures) do
-              reverttexture[i] = {address = v.address, flags = v.flags, value = v.value}
-            end
-            texture = on
-            for i, v in ipairs(textures) do
-            textures[i].value = '51'
+    end
+    
+    if menu[11] then
+      if texture == on then
+        texture = off
+        gg.setValues(reverttexture)
+        gg.toast('Texture deactivated, must go through gate')
+      else
+        if str3 then
+          texture = on
+          for i, v in ipairs(textures) do
             gg.setValues(textures)
-            end
             gg.toast('Textures activated, must go through gate')
           end
+        else
+          str3 = true
+          gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_ANONYMOUS | gg.REGION_OTHER)
+          gg.searchNumber('h 06 00 00 00 61 00 00 00 00 00 00 3F 2B 00 04 00', gg.TYPE_BYTE)
+          gg.refineNumber('h 00 00 00 3F', gg.TYPE_BYTE)
+          gg.refineNumber('h 00 00 00', gg.TYPE_BYTE)
+          textures = gg.getResults(32)
+          gg.clearResults()
+          reverttexture = {}
+          for i, v in ipairs(textures) do
+            reverttexture[i] = {address = v.address, flags = v.flags, value = v.value}
+          end
+          texture = on
+          for i, v in ipairs(textures) do
+          textures[i].value = '51'
+          gg.setValues(textures)
+          end
+          gg.toast('Textures activated, must go through gate')
         end
       end
-      
-      if menu[12] then
-        removeClouds()
-      end
-    end     
-  end
+    end
+    
+    if menu[12] then
+      removeClouds()
+    end
+  end  
   gg.setRanges(old)
 end
 
@@ -457,6 +455,96 @@ end
 
 
 
+
+function collectkrill(uy)
+  frz = true
+  eval = {}
+  pattern = 0x2B0
+  rpoint = eoffsets.nentity - poffsets.ecrabs - 0xC170
+  mpoint = getcoord(true)
+  if uy == 0 then
+    for i=0,10 do
+    evalid = getadd(rpoint + (pattern*i)+0x30,gg.TYPE_FLOAT)
+    if evalid == 0 then
+      break
+    end
+    --eposit = {getadd(rpoint + (0xC80*i),gg.TYPE_FLOAT),getadd(rpoint + (0xC80*i)+0x4,gg.TYPE_FLOAT),getadd(rpoint + (0xC80*i)+0x8,gg.TYPE_FLOAT)}
+    table.insert(eval,{address=rpoint + (pattern*i)+0x4,flags=gg.TYPE_FLOAT,value=-999,freeze=true,name='krillY'})
+    end
+if #eval == 0 then return; end
+  --gg.setValues(eval)
+  if isfreeze(rpoint) then
+    gg.removeListItems(eval)
+    gg.toast('off')
+    else
+    gg.addListItems(eval)
+    gg.toast('on')
+  end
+  return;
+  end
+  if uy == 1 then
+    for i=0,10 do
+    --detec : 1D0
+    evalid = getadd(rpoint + (pattern*i),gg.TYPE_FLOAT)
+    if evalid == 0 then
+      break
+    end
+      table.insert(eval,{address=rpoint + (pattern*i),flags=gg.TYPE_FLOAT,value=mpoint[1]})
+      table.insert(eval,{address=rpoint + (pattern*i)+0x4,flags=gg.TYPE_FLOAT,value=mpoint[2]})
+      table.insert(eval,{address=rpoint + (pattern*i)+0x8,flags=gg.TYPE_FLOAT,value=mpoint[3]})
+    end
+    gg.setValues(eval)
+    return;
+  end
+  if uy == 2 then
+    for i=0,10 do
+    --detec : 1D0
+    evalid = getadd(rpoint + (pattern*i),gg.TYPE_FLOAT)
+    if evalid == 0 then
+      break
+    end
+    if isfreeze(rpoint+(pattern*i)+0x24) then
+      setadd(rpoint+(pattern*i)+0x24,gg.TYPE_FLOAT,0,false)
+    else
+      setadd(rpoint+(pattern*i)+0x24,gg.TYPE_FLOAT,0,true)
+    end
+    end
+    return;
+  end
+  if uy == 3 then
+    for i=0,10 do
+    --detec : 1D0
+    evalid = getadd(rpoint + (pattern*i),gg.TYPE_FLOAT)
+    if evalid == 0 then
+      break
+    end
+    if isfreeze(rpoint+(pattern*i)+0x1AC) then
+      setadd(rpoint+(pattern*i)+0x1AC,gg.TYPE_DWORD,257,false)
+    else
+      setadd(rpoint+(pattern*i)+0x1AC,gg.TYPE_DWORD,257,true)
+    end
+    end
+    return;
+  end
+  if uy == 4 then
+    for i=0,10 do
+    --detec : 1D0
+    evalid = getadd(rpoint + (pattern*i),gg.TYPE_FLOAT)
+    if evalid == 0 then
+      break
+    end
+    if isfreeze(rpoint+(pattern*i)+0x1AC) then
+      setadd(rpoint+(pattern*i)+0x1AC,gg.TYPE_DWORD,258,false)
+    else
+      setadd(rpoint+(pattern*i)+0x1AC,gg.TYPE_DWORD,258,true)
+    end
+    end
+    return;
+  end
+  if uy == 5 then
+    setposit(getadd(rpoint,gg.TYPE_FLOAT),getadd(rpoint+0x4,gg.TYPE_FLOAT),getadd(rpoint+0x8,gg.TYPE_FLOAT))
+  end
+end
 
 function breachWall()
   adr = pbase + poffsets.pwing
