@@ -433,6 +433,8 @@ function quickSteep() -- menu 5
     end
   end
 end
+  
+-- HI
 
 function rechargeLight() -- menu 6
   charg = on
