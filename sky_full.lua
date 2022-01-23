@@ -396,7 +396,7 @@ function smootherGraphixs() -- menu 4
 end
 
 function quickSteep() -- menu 5
-  menuQuickSteep = gg.choice({
+  menuquicksteep = gg.choice({
       'OFF', -- 1
       '🚲Rapido', -- 2
       '♋︎Naruto', -- 3
@@ -404,30 +404,30 @@ function quickSteep() -- menu 5
       'Atras' -- 5
       },nil,'WARNING, DONT TRAP YOUR SELF')
 
-  if menuQuickSteep == nil then return; end
+  if menuquicksteep == nil then return; end
 
   else
-    if menuQuickSteep == 5 then
+    if menuquicksteep == 5 then
       START()
     end
-    if menuQuickSteep == 1 then
+    if menuquicksteep == 1 then
       quick = off
       gg.setValues(revertquickstp)
       gg.toast('Pasos rapidos desactivados')
     end
-    if menuQuickSteep == 2 then
+    if menuquicksteep == 2 then
       quick = on
       quickstp[1].value = '30'
       gg.setValues(quickstp)
       gg.toast('Modo Rapido activado')
     end
-    if menuQuickSteep == 3 then
+    if menuquicksteep == 3 then
       quick = on
       quickstp[1].value = '50'
       gg.setValues(quickstp)
       gg.toast('Modo Naruto activado')
     end
-    if menuQuickSteep == 4 then
+    if menuquicksteep == 4 then
       quick = on
       quickstp[1].value = '80'
       gg.setValues(quickstp)
