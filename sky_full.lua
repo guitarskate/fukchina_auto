@@ -59,6 +59,8 @@ for i, v in ipairs(quickstp) do
 revertquickstp[i] = {address = v.address, flags = v.flags, value = v.value}
 end
 
+gg.alert('PASOS DEFAULT: '..revertquickstp)
+
 gg.searchNumber('2.5', gg.TYPE_FLOAT)
 chargwing = gg.getResults(1)
 gg.clearResults()
@@ -118,19 +120,19 @@ end
 
 function START()
   menu = gg.choice({
-      wing..'Energia infinita', -- 1
-      maxlvwing..'Nivel maximo alas', -- 2
-      wingpower..'Poder de vuelo', -- 3
-      graphx.. 'Suavizar graficos', -- 4
-      quick.. 'Correr rapido', -- 5
-      charg.. 'Recargar alas', -- 6
-      under.. 'traspasar piso', -- 7
-      jump.. 'saltos largos', -- 8
-      flygravity.. 'Fly gravity', -- 9
-      noequip.. 'Hide equipent', -- 10
-      texture.. 'Stretch texture (must go through gate)', -- 11
-      cloudss.. 'Remover nubes', -- 12
-      candles.. 'Mostrar todas las velas', -- 13
+      wing..' Energia infinita', -- 1
+      maxlvwing..' Nivel maximo alas', -- 2
+      wingpower..' Poder de vuelo', -- 3
+      graphx.. ' Suavizar graficos', -- 4
+      quick.. ' Correr rapido', -- 5
+      charg.. ' Recargar alas', -- 6
+      under.. ' traspasar piso', -- 7
+      jump.. ' saltos largos', -- 8
+      flygravity.. ' Fly gravity', -- 9
+      noequip.. ' Hide equipent', -- 10
+      texture.. ' Stretch texture (must go through gate)', -- 11
+      cloudss.. ' Remover nubes', -- 12
+      candles.. ' Mostrar todas las velas', -- 13
       'Salir' -- 14
       },nil,'Select cheat')
   if menu == nil then return; end
@@ -407,7 +409,6 @@ function quickSteep() -- menu 5
     quick = off
     gg.setValues(revertquickstp)
     gg.toast('Pasos rapidos desactivados')
-    gg.alert('PASOS DEFAULT: ' ..revertquickstp)
   end
   if rv == 2 then
     addQuickSteep('30')
