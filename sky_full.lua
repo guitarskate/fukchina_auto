@@ -407,6 +407,7 @@ function quickSteep() -- menu 5
     quick = off
     gg.setValues(revertquickstp)
     gg.toast('Pasos rapidos desactivados')
+    gg.alert('Default: '..quickstp[1])
   end
   if rv == 2 then
     addQuickSteep('30')
@@ -513,7 +514,7 @@ function viscandle(bool)
 end
 
 function breachWall()
-  adr = pbase + poffsets.pwing
+  adr = pbase + 0x1E494
   if isfreeze(adr) then
     setadd(adr,gg.TYPE_FLOAT,14,false)
     gg.toast('off')
