@@ -59,8 +59,6 @@ for i, v in ipairs(quickstp) do
 revertquickstp[i] = {address = v.address, flags = v.flags, value = v.value}
 end
 
-gg.alert('PASOS DEFAULT: '..revertquickstp)
-
 gg.searchNumber('2.5', gg.TYPE_FLOAT)
 chargwing = gg.getResults(1)
 gg.clearResults()
