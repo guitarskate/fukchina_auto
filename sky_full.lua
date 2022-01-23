@@ -396,47 +396,39 @@ function smootherGraphixs() -- menu 4
 end
 
 function quickSteep() -- menu 5
-  menusteep = gg.choice({
+  rv = gg.choice({
     'OFF', -- 1
     '🚲Rapido', -- 2
     '♋︎Naruto', -- 3
     '⚡️Flash', -- 4
     'Atras' -- 5
-    },nil,'Seleccione uno')
-
-  if menusteep == nil then
-    noselect()
-  else
-    if menusteep == 5 then
-      START()
-    else
-      if menusteep == 1 then
-        quick = off
-        gg.setValues(revertquickstp)
-        gg.toast('Pasos rapidos desactivados')
-      else
-        if menusteep == 2 then
-          quick = on
-          quickstp[1].value = '30'
-          gg.setValues(quickstp)
-          gg.toast('Modo Rapido activado')
-        else
-          if menusteep == 3 then
-            quick = on
-            quickstp[1].value = '50'
-            gg.setValues(quickstp)
-            gg.toast('Modo Naruto activado')
-          else
-            if menusteep == 4 then
-              quick = on
-              quickstp[1].value = '80'
-              gg.setValues(quickstp)
-              gg.toast('Modo Flash activado')
-            end
-          end
-        end
-      end
-    end
+  },nil,'')
+  
+  if rv == 1 then
+    quick = off
+    gg.setValues(revertquickstp)
+    gg.toast('Pasos rapidos desactivados')
+  end
+  if rv == 2 then
+    quick = on
+    quickstp[1].value = '30'
+    gg.setValues(quickstp)
+    gg.toast('Modo Rapido activado')
+  end
+  if rv == 3 then
+    quick = on
+    quickstp[1].value = '80'
+    gg.setValues(quickstp)
+    gg.toast('Modo Naruto activado')
+  end
+  if rv == 4 then
+    quick = on
+    quickstp[1].value = '150'
+    gg.setValues(quickstp)
+    gg.toast('Modo Flash activado')
+  end
+  if rv == 5 then
+    START()
   end
 end
 
