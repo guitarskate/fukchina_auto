@@ -403,15 +403,17 @@ function quickSteep() -- menu 5
       '⚡️Flash', -- 4
       'Atras' -- 5
       },nil,'WARNING, DONT TRAP YOUR SELF')
-  if menuQuickSteep == nil then
-    noselect()
+
+  if menuQuickSteep == nil then return; end
+
   else
     if menuQuickSteep == 5 then
       START()
+    end
     if menuQuickSteep == 1 then
       quick = off
       gg.setValues(revertquickstp)
-      gg.toast('Quick Steps deactivated')
+      gg.toast('Pasos rapidos desactivados')
     end
     if menuQuickSteep == 2 then
       quick = on
@@ -484,11 +486,6 @@ end
 
 
 
-  
-  
-  
-  
-  
 
 function showAllCandles()
   if candles == on then
@@ -518,6 +515,17 @@ function viscandle(bool)
    end
   end
   gg.setValues(xv)
+end
+
+function breachWall()
+  adr = pbase + poffsets.pwing
+  if isfreeze(adr) then
+    setadd(adr,gg.TYPE_FLOAT,14,false)
+    gg.toast('off')
+  else
+    setadd(adr,gg.TYPE_FLOAT,inputnum(14),true)
+    gg.toast('on')
+  end
 end
 
 function getadd(add,flag)
