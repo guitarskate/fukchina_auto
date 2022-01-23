@@ -403,33 +403,33 @@ function quickSteep() -- menu 5
     '⚡️Flash', -- 4
     'Atras' -- 5
   },nil,'')
-  
   if rv == 1 then
     quick = off
     gg.setValues(revertquickstp)
     gg.toast('Pasos rapidos desactivados')
+    gg.alert('PASOS DEFAULT: ' ..revertquickstp)
   end
   if rv == 2 then
-    quick = on
-    quickstp[1].value = '30'
-    gg.setValues(quickstp)
+    addQuickSteep('30')
     gg.toast('Modo Rapido activado')
   end
   if rv == 3 then
-    quick = on
-    quickstp[1].value = '80'
-    gg.setValues(quickstp)
+    addQuickSteep('80')
     gg.toast('Modo Naruto activado')
   end
   if rv == 4 then
-    quick = on
-    quickstp[1].value = '150'
-    gg.setValues(quickstp)
+    addQuickSteep('180')
     gg.toast('Modo Flash activado')
   end
   if rv == 5 then
     START()
   end
+end
+
+function addQuickSteep(valueSteep)
+  quick = on
+  quickstp[1].value = valueSteep
+  gg.setValues(quickstp)
 end
 
 function rechargeLight() -- menu 6
