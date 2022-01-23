@@ -485,7 +485,10 @@ end
 
 
 
-function showAllCandles()
+
+
+
+function showAllCandles() -- TEST FUNCTION
   if candles == on then
       candles = off
       viscandle(false)
