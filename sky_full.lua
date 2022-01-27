@@ -23,7 +23,9 @@ noequip = off
 texture = off
 cloudss = off
 candles = off
+mnode = off
 
+nodes = {}
 
 
 local old = gg.getRanges();
@@ -131,11 +133,12 @@ function START()
       texture.. ' Stretch texture (must go through gate)', -- 11
       cloudss.. ' Remover nubes', -- 12
       candles.. ' Mostrar todas las velas', -- 13
-      'Salir' -- 14
+      mnode.. ' 💕 Desbloquear nodos de amigos', -- 14
+      'Salir' -- 15
       },nil,'Select cheat')
   if menu == nil then return; end
 
-  if menu == 14 then
+  if menu == 15 then
     wiping()
   else
     if menu == 1 then
@@ -256,6 +259,9 @@ function START()
     end
     if menu == 13 then
       showAllCandles()
+    end
+    if menu == 14 then
+      unlockFliendNode()
     end
   end
   gg.setRanges(old)
@@ -407,18 +413,17 @@ function quickSteep() -- menu 5
     quick = off
     gg.setValues(revertquickstp)
     gg.toast('Pasos rapidos desactivados')
-    gg.alert('Default: '..quickstp[1])
   end
   if rv == 2 then
     addQuickSteep('30')
     gg.toast('Modo Rapido activado')
   end
   if rv == 3 then
-    addQuickSteep('80')
+    addQuickSteep('1000')
     gg.toast('Modo Naruto activado')
   end
   if rv == 4 then
-    addQuickSteep('180')
+    addQuickSteep('3000')
     gg.toast('Modo Flash activado')
   end
   if rv == 5 then
@@ -480,6 +485,38 @@ function removeClouds()
   end
 end
 
+function unlockFliendNode()
+  gg.setVisible(false)
+  getfriendnode()
+  srd = {}
+  for k,v in ipairs(nodes) do
+    table.insert(srd,{address = v[2],flags = gg.TYPE_DWORD,value = 0})
+  end
+  gg.setValues(srd)
+  gg.toast('done')
+end
+
+gnode = 0x00
+enode = 0x13BC474
+nentity = 0x00
+function getfriendnode()
+  if #nodes < 3 then
+    gnode=nentity - enode
+    for i = 0, 39 do
+      nn = gnode + (0x2E0 * i)
+      mm = nn - 0x28
+      yy = addtostr(nn + 0x1,20)
+      if string.find(yy,'accept_') then
+        table.insert(nodes,{yy,mm,getadd(mm,gg.TYPE_DWORD)})
+      end
+    end
+  end
+
+end
+
+
+
+
 
 
 
@@ -495,7 +532,11 @@ function showAllCandles()
     end
 end
 
+rbootloader = 0x00
+ptoplayer = 0x1493098
 function viscandle(bool)
+  pbase = getadd(rbootloader + ptoplayer,gg.TYPE_QWORD) + 0x420910
+  gg.alert('PBase: ' ..pbase)
   xv = {}
   vcandles = 0x501BB4
   for i = 0,128 do
@@ -532,6 +573,16 @@ function getadd(add,flag)
   }
   yy = gg.getValues(uu)
   return tonumber(yy[1].value)
+end
+
+function addtostr(add,amount)
+  mp = ''
+  for i = 0, amount do
+    mu = getadd(add + i,gg.TYPE_BYTE)
+    if mu < 1 then break end
+    mp = mp .. string.char(mu)
+  end
+  return mp
 end
 
 function wiping()
